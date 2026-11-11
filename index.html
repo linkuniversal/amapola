@@ -1,1 +1,1372 @@
-AMAPOLA
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Amapola · Diseño Floral & Verdes | Puerto Iguazú</title>
+    <meta name="description" content="Diseño floral, paisajismo comercial, hotelería y flores de autor en Puerto Iguazú, Misiones. Ramos de novia, flores eternas y ambientaciones.">
+
+    <meta name="theme-color" content="#FCEBE5">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <!-- TIPOGRAFÍAS DE ALTA COSTURA BOTÁNICA -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Pinyon+Script&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* ==========================================================================
+           1. ADN CROMÁTICO ARMONIZADO AMAPOLA
+           ========================================================================== */
+        :root {
+            --ama-nude-light: #FCEBE5;
+            --ama-nude: #F2E1DA;
+            --ama-beige: #EFE1D8;
+            --ama-coral-soft: #F3B9AF;
+            --ama-rose-deep: #B96E6E;
+            --ama-rose-intense: #A85353;
+            --ama-dark: #121010;
+            --ama-charcoal: #2A2525;
+            --ama-green-stem: #3D5344;
+            --ama-white: #FFFFFF;
+
+            --font-serif: 'Cormorant Garamond', Georgia, serif;
+            --font-script: 'Pinyon Script', cursive;
+            --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+            --shadow-subtle: 0 10px 28px -6px rgba(185, 110, 110, 0.12), 0 2px 8px rgba(18, 16, 16, 0.04);
+            --shadow-card: 0 14px 34px -8px rgba(185, 110, 110, 0.16), 0 2px 10px rgba(0, 0, 0, 0.03);
+            --shadow-hero: 0 18px 42px -6px rgba(168, 83, 83, 0.38), 0 4px 12px rgba(0, 0, 0, 0.08);
+
+            --smooth: cubic-bezier(0.16, 1, 0.3, 1);
+            --spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+            background-color: var(--ama-nude-light);
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--ama-charcoal);
+            background: linear-gradient(180deg, #FCEBE5 0%, #F2E1DA 45%, #EFE1D8 100%);
+            min-height: 100vh;
+            min-height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 14px 54px;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* ==========================================================================
+           2. FONDO BOTÁNICO EN BRISA CONTINUA (IMPECABLE Y SUTIL)
+           ========================================================================== */
+        .botanical-dense-backdrop {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw; height: 100vh;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .bg-cluster {
+            position: absolute;
+            will-change: transform;
+            pointer-events: none;
+            opacity: 0.17;
+            filter: drop-shadow(0 2px 5px rgba(185, 110, 110, 0.1));
+        }
+
+        .bg-c1 { top: 4%; left: -10px; width: 68px; height: 68px; animation: floatCadenceA 24s infinite alternate ease-in-out; }
+        .bg-c2 { top: 12%; right: -8px; width: 62px; height: 62px; animation: floatCadenceB 28s infinite alternate ease-in-out -4s; }
+        .bg-c3 { top: 26%; left: -6px; width: 56px; height: 56px; animation: floatCadenceC 22s infinite alternate ease-in-out -8s; }
+        .bg-c4 { top: 38%; right: -12px; width: 72px; height: 72px; animation: floatCadenceA 26s infinite alternate ease-in-out -12s; }
+        .bg-c5 { top: 54%; left: -14px; width: 78px; height: 78px; animation: floatCadenceB 30s infinite alternate ease-in-out -6s; }
+        .bg-c6 { top: 68%; right: -8px; width: 64px; height: 64px; animation: floatCadenceC 24s infinite alternate ease-in-out -15s; }
+        .bg-c7 { bottom: 8%; left: -6px; width: 60px; height: 60px; animation: floatCadenceA 25s infinite alternate ease-in-out -3s; }
+        .bg-c8 { bottom: 2%; right: -10px; width: 70px; height: 70px; animation: floatCadenceB 27s infinite alternate ease-in-out -9s; }
+        .bg-c-mid { top: 48%; left: 50%; width: 140px; height: 140px; margin-left: -70px; opacity: 0.07; filter: blur(1.5px); animation: floatCadenceC 36s infinite alternate ease-in-out; }
+
+        @keyframes floatCadenceA {
+            0%   { transform: translate(0, 0) rotate(0deg) scale(1); }
+            50%  { transform: translate(10px, -14px) rotate(8deg) scale(1.05); }
+            100% { transform: translate(-8px, 12px) rotate(-6deg) scale(0.96); }
+        }
+        @keyframes floatCadenceB {
+            0%   { transform: translate(0, 0) rotate(0deg) scale(1); }
+            50%  { transform: translate(-12px, 15px) rotate(-8deg) scale(1.06); }
+            100% { transform: translate(10px, -10px) rotate(6deg) scale(0.95); }
+        }
+        @keyframes floatCadenceC {
+            0%   { transform: translate(0, 0) rotate(0deg) scale(1); }
+            50%  { transform: translate(8px, 12px) rotate(6deg) scale(0.97); }
+            100% { transform: translate(-10px, -12px) rotate(-7deg) scale(1.04); }
+        }
+
+        /* ==========================================================================
+           3. CONTENEDOR CENTRAL RESPONSIVE (BLINDADO PARA INSTAGRAM)
+           ========================================================================== */
+        .amapola-shell {
+            width: 100%;
+            max-width: 440px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            z-index: 10;
+            position: relative;
+        }
+
+        /* ==========================================================================
+           4. CABECERA: MEDIO ARCO ARQUITECTÓNICO QUE PARTE DEL BORDE SUPERIOR
+           ========================================================================== */
+        .header-pediment-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .crest-arch-container {
+            width: 215px;
+            max-width: 62%;
+            background: #FFFFFF;
+            border-radius: 0 0 110px 110px;
+            padding: 14px 18px 22px;
+            border: 1.5px solid var(--ama-coral-soft);
+            border-top: none;
+            box-shadow: 0 14px 32px -8px rgba(185, 110, 110, 0.22), 0 4px 10px rgba(0, 0, 0, 0.03);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.35s var(--smooth);
+            position: relative;
+        }
+
+        .crest-arch-container:hover {
+            transform: translateY(2px);
+        }
+
+        .logo-svg-pediment {
+            width: 100%;
+            height: auto;
+            max-height: 105px;
+            display: block;
+            color: var(--ama-dark);
+            filter: drop-shadow(0 2px 3px rgba(18, 16, 16, 0.08));
+        }
+
+        .brand-headline-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 10px;
+            gap: 2px;
+        }
+
+        .signature-script-text {
+            font-family: var(--font-script);
+            font-size: 2.2rem;
+            line-height: 1;
+            color: var(--ama-rose-deep);
+            text-shadow: 0 2px 6px rgba(185, 110, 110, 0.15);
+        }
+
+        .brand-sub-tag {
+            font-family: var(--font-serif);
+            font-size: 0.82rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--ama-charcoal);
+            opacity: 0.9;
+        }
+
+        /* BIO MINIMALISTA CON ICONOS VECTORIALES PROFESIONALES */
+        .brand-bio-box {
+            background: rgba(255, 255, 255, 0.84);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(243, 185, 175, 0.6);
+            border-radius: 20px;
+            padding: 14px 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+            box-shadow: var(--shadow-subtle);
+            width: 100%;
+        }
+
+        .bio-item-row {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            color: var(--ama-charcoal);
+            line-height: 1.35;
+        }
+
+        .bio-vector-icon {
+            width: 20px;
+            height: 20px;
+            min-width: 20px;
+            color: var(--ama-rose-deep);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bio-vector-icon svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* ==========================================================================
+           5. HERO CTA: BOTÓN WHATSAPP CON CORONA ENVOLVENTE Y HAZ DE LUZ
+           ========================================================================== */
+        .cta-wreath-perimeter-wrap {
+            position: relative;
+            padding: 10px 4px;
+            width: 100%;
+        }
+
+        .btn-whatsapp-wreath {
+            position: relative;
+            background: linear-gradient(135deg, #B96E6E 0%, #A44C4C 100%);
+            border: 2.5px solid #FFFFFF;
+            border-radius: 999px;
+            padding: 18px 22px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none;
+            color: #FFFFFF;
+            box-shadow: var(--shadow-hero);
+            transition: all 0.28s var(--smooth);
+            overflow: hidden;
+            cursor: pointer;
+            z-index: 5;
+        }
+
+        /* HAZ DE LUZ RADIANTE EN BARRIDO CONTINUO */
+        .btn-whatsapp-wreath::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -140%;
+            width: 65%; height: 100%;
+            background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.45) 50%, transparent 100%);
+            transform: skewX(-25deg);
+            animation: jewelBeamSweep 4.8s infinite ease-in-out;
+            pointer-events: none;
+            z-index: 3;
+        }
+
+        @keyframes jewelBeamSweep {
+            0%, 55% { left: -140%; }
+            85%, 100% { left: 180%; }
+        }
+
+        .btn-whatsapp-wreath:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 24px 48px -6px rgba(168, 83, 83, 0.48);
+        }
+
+        .btn-whatsapp-wreath:active {
+            transform: scale(0.97);
+        }
+
+        .wpp-text-group {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            text-align: left;
+            position: relative;
+            z-index: 4;
+        }
+
+        .wpp-tag-pulse {
+            font-size: 0.68rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: #FFF2EC;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .wpp-tag-pulse::before {
+            content: '';
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #25D366;
+            box-shadow: 0 0 10px #25D366;
+            animation: pulseDot 2s infinite ease-in-out;
+        }
+
+        @keyframes pulseDot {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.3); opacity: 0.8; }
+        }
+
+        .wpp-main-heading {
+            font-family: var(--font-serif);
+            font-size: 1.32rem;
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -0.01em;
+        }
+
+        .wpp-sub-info {
+            font-size: 0.76rem;
+            color: #FFE6DF;
+            font-weight: 500;
+        }
+
+        .wpp-icon-badge {
+            width: 46px;
+            height: 46px;
+            min-width: 46px;
+            border-radius: 50%;
+            background: #FFFFFF;
+            color: var(--ama-rose-deep);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+            transition: transform 0.35s var(--spring);
+            position: relative;
+            z-index: 4;
+        }
+
+        .btn-whatsapp-wreath:hover .wpp-icon-badge {
+            transform: scale(1.15) rotate(14deg);
+            color: #25D366;
+        }
+
+        .wpp-icon-badge svg {
+            width: 25px;
+            height: 25px;
+            fill: currentColor;
+        }
+
+        /* CORONA FLORAL EXTERIOR (NO TAPA EL TEXTO) */
+        .garland-node {
+            position: absolute;
+            pointer-events: none;
+            z-index: 7;
+            will-change: transform;
+            filter: drop-shadow(0 4px 8px rgba(168, 83, 83, 0.35));
+            animation: garlandBreeze 5s infinite ease-in-out alternate;
+        }
+
+        .gn-top-l   { top: -6px; left: 14px; width: 34px; height: 34px; animation-delay: 0s; }
+        .gn-top-r   { top: -8px; right: 62px; width: 34px; height: 34px; animation-delay: -2s; }
+        .gn-side-l  { top: 50%; left: -8px; margin-top: -16px; width: 30px; height: 30px; animation-delay: -1.2s; }
+        .gn-side-r  { top: 50%; right: -8px; margin-top: -16px; width: 30px; height: 30px; animation-delay: -3.5s; }
+        .gn-bot-l   { bottom: -6px; left: 32px; width: 32px; height: 32px; animation-delay: -2.8s; }
+        .gn-bot-r   { bottom: -7px; right: 18px; width: 34px; height: 34px; animation-delay: -0.8s; }
+
+        @keyframes garlandBreeze {
+            0%   { transform: rotate(0deg) scale(1); }
+            50%  { transform: rotate(8deg) scale(1.08); }
+            100% { transform: rotate(-6deg) scale(0.96); }
+        }
+
+        /* ==========================================================================
+           6. ESCAPARATE DE VIDEOS CLOUDFLARE EN BUCLE
+           ========================================================================== */
+        .section-block-flow {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 100%;
+        }
+
+        .section-header-editorial {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding: 0 4px 6px;
+            border-bottom: 1.5px solid var(--ama-coral-soft);
+        }
+
+        .section-title-serif {
+            font-family: var(--font-serif);
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--ama-dark);
+            line-height: 1;
+        }
+
+        .section-title-serif em {
+            font-family: var(--font-script);
+            font-size: 1.85rem;
+            color: var(--ama-rose-deep);
+            font-weight: 400;
+            margin-left: 4px;
+        }
+
+        .section-badge-micro {
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--ama-rose-deep);
+            background: #FFFFFF;
+            padding: 4px 10px;
+            border-radius: 999px;
+            border: 1px solid var(--ama-coral-soft);
+        }
+
+        .reels-carousel-strip {
+            display: flex;
+            gap: 14px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding: 4px 2px 14px;
+            scrollbar-width: none;
+            -webkit-overflow-scrolling: touch;
+        }
+        .reels-carousel-strip::-webkit-scrollbar { display: none; }
+
+        .vase-card-media {
+            flex: 0 0 215px;
+            scroll-snap-align: start;
+            background: #FFFFFF;
+            border: 2px solid rgba(255, 255, 255, 0.9);
+            border-radius: 110px 110px 22px 22px;
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s var(--smooth);
+            position: relative;
+        }
+
+        .vase-card-media:hover {
+            transform: translateY(-4px);
+        }
+
+        .vase-video-frame {
+            width: 100%;
+            height: 285px;
+            background: var(--ama-beige);
+            position: relative;
+            overflow: hidden;
+            border-radius: 106px 106px 0 0;
+        }
+
+        .vase-video-frame video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .sound-indicator-pill {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            background: rgba(18, 16, 16, 0.7);
+            backdrop-filter: blur(4px);
+            color: #FFFFFF;
+            font-size: 0.65rem;
+            font-weight: 700;
+            padding: 4px 8px;
+            border-radius: 999px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        .vase-caption-box {
+            padding: 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .vase-tag-human {
+            font-family: var(--font-script);
+            font-size: 1.45rem;
+            color: var(--ama-rose-deep);
+            line-height: 1;
+        }
+
+        .vase-quote-human {
+            font-size: 0.77rem;
+            line-height: 1.45;
+            color: var(--ama-charcoal);
+            font-weight: 500;
+        }
+
+        /* ==========================================================================
+           7. BENTO GRID DE COLECCIONES DE AUTOR
+           ========================================================================== */
+        .bento-atelier-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            width: 100%;
+        }
+
+        .bento-card {
+            background: #FFFFFF;
+            border: 1.5px solid var(--ama-coral-soft);
+            border-radius: 22px;
+            padding: 16px 14px;
+            text-decoration: none;
+            color: var(--ama-charcoal);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 135px;
+            box-shadow: var(--shadow-subtle);
+            transition: all 0.28s var(--smooth);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bento-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--ama-rose-deep);
+            box-shadow: var(--shadow-card);
+        }
+
+        .bento-card.full-width {
+            grid-column: span 2;
+            flex-direction: row;
+            align-items: center;
+            min-height: auto;
+            border-radius: 24px 10px 24px 10px;
+            padding: 18px 20px;
+            background: linear-gradient(135deg, #FFFFFF 0%, #FFF6F3 100%);
+        }
+
+        .bento-card.card-featured-rose {
+            background: linear-gradient(135deg, #B96E6E 0%, #A44C4C 100%);
+            color: #FFFFFF;
+            border-color: #FFFFFF;
+        }
+
+        .bento-card.card-featured-rose .bento-sub-text,
+        .bento-card.card-featured-rose .bento-script-mini {
+            color: #FFE6DF;
+        }
+
+        .bento-card.card-featured-rose .bento-arrow {
+            background: #FFFFFF;
+            color: var(--ama-rose-deep);
+        }
+
+        .bento-top-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 6px;
+        }
+
+        .bento-script-mini {
+            font-family: var(--font-script);
+            font-size: 1.35rem;
+            color: var(--ama-rose-deep);
+            line-height: 1;
+        }
+
+        .bento-arrow {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background: var(--ama-nude);
+            color: var(--ama-charcoal);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 0.75rem;
+            transition: transform 0.2s var(--smooth);
+        }
+
+        .bento-card:hover .bento-arrow {
+            transform: translateX(3px);
+        }
+
+        .bento-title {
+            font-family: var(--font-serif);
+            font-size: 1.15rem;
+            font-weight: 700;
+            line-height: 1.15;
+            letter-spacing: -0.01em;
+        }
+
+        .bento-sub-text {
+            font-size: 0.75rem;
+            color: #6A6060;
+            line-height: 1.36;
+            margin-top: 3px;
+            font-weight: 500;
+        }
+
+        /* ==========================================================================
+           8. PAISAJISMO COMERCIAL: ANTES / DESPUÉS INTERACTIVO
+           ========================================================================== */
+        .landscape-interactive-card {
+            background: #FFFFFF;
+            border: 2px solid var(--ama-coral-soft);
+            border-radius: 26px;
+            padding: 18px;
+            box-shadow: var(--shadow-card);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 100%;
+        }
+
+        .landscape-header {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+
+        .landscape-tag {
+            font-family: var(--font-serif);
+            font-size: 0.74rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--ama-green-stem);
+        }
+
+        .landscape-quote {
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            font-weight: 700;
+            line-height: 1.25;
+            color: var(--ama-dark);
+        }
+
+        .landscape-view-box {
+            position: relative;
+            width: 100%;
+            height: 215px;
+            border-radius: 18px;
+            overflow: hidden;
+            border: 1.5px solid var(--ama-nude);
+            background: var(--ama-beige);
+        }
+
+        .landscape-img-state {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.4s var(--smooth);
+        }
+
+        .img-after { opacity: 1; }
+        .img-before { opacity: 0; }
+
+        .landscape-view-box.show-before .img-before { opacity: 1; }
+        .landscape-view-box.show-before .img-after { opacity: 0; }
+
+        .toggle-before-after-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            background: var(--ama-nude-light);
+            border-radius: 999px;
+            padding: 4px;
+            border: 1px solid var(--ama-coral-soft);
+        }
+
+        .toggle-btn-pill {
+            flex: 1;
+            padding: 8px 12px;
+            border-radius: 999px;
+            border: none;
+            background: transparent;
+            font-family: var(--font-sans);
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: var(--ama-charcoal);
+            cursor: pointer;
+            transition: all 0.22s var(--smooth);
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .toggle-btn-pill.active {
+            background: #FFFFFF;
+            color: var(--ama-rose-deep);
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .landscape-footer-copy {
+            font-size: 0.77rem;
+            color: #5C5252;
+            line-height: 1.42;
+        }
+
+        /* ==========================================================================
+           9. GUÍA DE CUIDADOS CON ICONOS BOTÁNICOS VECTORIALES
+           ========================================================================== */
+        .care-guide-card {
+            background: #FFFFFF;
+            border: 2px solid var(--ama-coral-soft);
+            border-radius: 24px;
+            padding: 18px;
+            box-shadow: var(--shadow-subtle);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+        }
+
+        .care-header-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .care-title {
+            font-family: var(--font-serif);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--ama-dark);
+        }
+
+        .care-step-item {
+            background: var(--ama-nude-light);
+            border-radius: 14px;
+            padding: 10px 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border: 1px solid rgba(243, 185, 175, 0.45);
+        }
+
+        .care-icon-badge {
+            width: 36px;
+            height: 36px;
+            min-width: 36px;
+            border-radius: 50%;
+            background: #FFFFFF;
+            color: var(--ama-rose-deep);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+        }
+
+        .care-icon-badge svg {
+            width: 18px;
+            height: 18px;
+            stroke: currentColor;
+            fill: none;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .care-step-text {
+            font-size: 0.79rem;
+            line-height: 1.38;
+            color: var(--ama-charcoal);
+            font-weight: 500;
+        }
+
+        .care-step-text strong {
+            color: var(--ama-dark);
+            font-weight: 700;
+        }
+
+        /* ==========================================================================
+           10. PIE EDITORIAL & UBICACIÓN
+           ========================================================================== */
+        .amapola-footer {
+            margin-top: 6px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 8px;
+            padding-top: 18px;
+            border-top: 1.5px dashed var(--ama-coral-soft);
+            width: 100%;
+        }
+
+        .footer-badge-seal {
+            font-family: var(--font-serif);
+            font-size: 0.9rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--ama-dark);
+            background: #FFFFFF;
+            padding: 6px 16px;
+            border-radius: 999px;
+            box-shadow: var(--shadow-subtle);
+            border: 1px solid var(--ama-coral-soft);
+        }
+
+        .footer-address-link {
+            font-size: 0.78rem;
+            color: var(--ama-charcoal);
+            text-decoration: none;
+            line-height: 1.45;
+            transition: color 0.2s ease;
+        }
+
+        .footer-address-link:hover {
+            color: var(--ama-rose-deep);
+        }
+
+        .footer-social-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 2px;
+        }
+
+        .social-pill-btn {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: #FFFFFF;
+            border: 1.5px solid var(--ama-coral-soft);
+            color: var(--ama-rose-deep);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: all 0.25s var(--smooth);
+        }
+
+        .social-pill-btn:hover {
+            transform: translateY(-2px) scale(1.08);
+            background: var(--ama-rose-deep);
+            color: #FFFFFF;
+        }
+
+        .social-pill-btn svg {
+            width: 19px;
+            height: 19px;
+            fill: currentColor;
+        }
+
+        .footer-rights {
+            font-size: 0.68rem;
+            color: #8C7F7F;
+            letter-spacing: 0.04em;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==========================================================================
+         DEFINICIONES VECTORIALES GEOMÉTRICAMENTE PERFECTAS (SÍMBOLOS 100x100)
+         ========================================================================== -->
+    <svg style="display: none;">
+        <defs>
+            <!-- 1. SÍMBOLO: AMAPOLA BOTÁNICA SILVESTRE (PETALOS SUAVES EN CAPAS) -->
+            <symbol id="flowerAmapolaSoft" viewBox="0 0 100 100">
+                <g transform="translate(50,50)">
+                    <path d="M0,0 C-22,-40 22,-40 0,0" fill="#B96E6E" opacity="0.95"/>
+                    <path d="M0,0 C40,-22 40,22 0,0" fill="#B96E6E" opacity="0.92"/>
+                    <path d="M0,0 C22,40 -22,40 0,0" fill="#A85353" opacity="0.95"/>
+                    <path d="M0,0 C-40,22 -40,-22 0,0" fill="#A85353" opacity="0.92"/>
+                    <ellipse cx="-12" cy="-12" rx="14" ry="10" fill="#F3B9AF" opacity="0.85" transform="rotate(-25 -12 -12)"/>
+                    <ellipse cx="14" cy="-10" rx="12" ry="9" fill="#F3B9AF" opacity="0.85" transform="rotate(30 14 -10)"/>
+                    <ellipse cx="10" cy="14" rx="13" ry="10" fill="#FCEBE5" opacity="0.8" transform="rotate(15 10 14)"/>
+                    <ellipse cx="-12" cy="12" rx="12" ry="9" fill="#FCEBE5" opacity="0.8" transform="rotate(-35 -12 12)"/>
+                    <circle cx="0" cy="0" r="10" fill="#FFFFFF" stroke="#B96E6E" stroke-width="1.8"/>
+                    <circle cx="0" cy="0" r="5" fill="#3D5344"/>
+                    <circle cx="0" cy="0" r="2" fill="#FFFFFF"/>
+                </g>
+            </symbol>
+
+            <!-- 2. SÍMBOLO: MARGARITA RADIAL DE PÉTALOS ESBELTOS -->
+            <symbol id="flowerDaisyRadial" viewBox="0 0 100 100">
+                <g transform="translate(50,50)" fill="#B96E6E" opacity="0.95">
+                    <ellipse cx="0" cy="-30" rx="4.5" ry="14"/>
+                    <ellipse cx="0" cy="30" rx="4.5" ry="14"/>
+                    <ellipse cx="-30" cy="0" rx="14" ry="4.5"/>
+                    <ellipse cx="30" cy="0" rx="14" ry="4.5"/>
+                    <ellipse cx="-21" cy="-21" rx="5" ry="14" transform="rotate(-45 -21 -21)"/>
+                    <ellipse cx="21" cy="21" rx="5" ry="14" transform="rotate(-45 21 21)"/>
+                    <ellipse cx="21" cy="-21" rx="5" ry="14" transform="rotate(45 21 -21)"/>
+                    <ellipse cx="-21" cy="21" rx="5" ry="14" transform="rotate(45 -21 21)"/>
+                    <circle cx="0" cy="0" r="12" fill="#FFFFFF" stroke="#B96E6E" stroke-width="1.8"/>
+                    <circle cx="0" cy="0" r="5.5" fill="#F3B9AF"/>
+                </g>
+            </symbol>
+
+            <!-- 3. SÍMBOLO: RAMA CON HOJAS Y CAPULLOS BOTÁNICOS -->
+            <symbol id="foliageBranchSprig" viewBox="0 0 100 100">
+                <path d="M15,85 Q45,55 85,15" fill="none" stroke="#3D5344" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M38,62 C46,50 62,54 62,64 C52,70 42,66 38,62 Z" fill="#3D5344"/>
+                <path d="M54,46 C44,38 42,22 52,24 C60,32 58,42 54,46 Z" fill="#3D5344"/>
+                <path d="M68,32 C78,22 92,26 90,36 C80,40 72,36 68,32 Z" fill="#3D5344"/>
+                <circle cx="85" cy="15" r="7" fill="#B96E6E"/>
+                <circle cx="85" cy="15" r="3" fill="#FFFFFF"/>
+                <circle cx="38" cy="62" r="5" fill="#F3B9AF"/>
+            </symbol>
+
+            <!-- 4. SÍMBOLO: CAPULLO DE ROSA PRESERVADA NUDE -->
+            <symbol id="rosePreservedBud" viewBox="0 0 100 100">
+                <g transform="translate(50,50)">
+                    <circle cx="0" cy="0" r="32" fill="#FCEBE5" stroke="#F3B9AF" stroke-width="2"/>
+                    <circle cx="0" cy="0" r="22" fill="#F3B9AF" opacity="0.9"/>
+                    <circle cx="0" cy="0" r="13" fill="#B96E6E"/>
+                    <circle cx="0" cy="0" r="6" fill="#FFFFFF"/>
+                </g>
+            </symbol>
+        </defs>
+    </svg>
+
+    <!-- ==========================================================================
+         FONDO BOTÁNICO EN BRISA CONTINUA (ENTEROS Y MATEMÁTICAMENTE ESCALADOS)
+         ========================================================================== -->
+    <div class="botanical-dense-backdrop">
+        <svg class="bg-cluster bg-c1"><use href="#foliageBranchSprig"/></svg>
+        <svg class="bg-cluster bg-c2"><use href="#flowerAmapolaSoft"/></svg>
+        <svg class="bg-cluster bg-c3"><use href="#flowerDaisyRadial"/></svg>
+        <svg class="bg-cluster bg-c4"><use href="#rosePreservedBud"/></svg>
+        <svg class="bg-cluster bg-c5"><use href="#flowerAmapolaSoft"/></svg>
+        <svg class="bg-cluster bg-c6"><use href="#foliageBranchSprig"/></svg>
+        <svg class="bg-cluster bg-c7"><use href="#rosePreservedBud"/></svg>
+        <svg class="bg-cluster bg-c8"><use href="#flowerDaisyRadial"/></svg>
+        <svg class="bg-cluster bg-c-mid"><use href="#flowerAmapolaSoft"/></svg>
+    </div>
+
+    <!-- CONTENEDOR PRINCIPAL MOBILE HUB -->
+    <main class="amapola-shell">
+
+        <!-- ==========================================================================
+             CABECERA: MEDIO ARCO ARQUITECTÓNICO QUE PARTE DEL BORDE SUPERIOR
+             ========================================================================== -->
+        <header class="header-pediment-wrap">
+            <div class="crest-arch-container">
+                <!-- SVG OFICIAL MAESTRO DE AMAPOLA -->
+                <svg class="logo-svg-pediment" viewBox="0 0 1038.05 670.88">
+                    <path fill="currentColor" d="M500.65,398.31c-5.46,5.99-10.11,12.14-15.8,17.11-9.14,7.99-18.98,15.19-28.5,22.74-10.11,8.02-22.49,5.09-28.15-6.69-3.94-8.21-5.52-8.65-14.3-7.23-3.88.63-8.57.42-12.01-1.24-6.89-3.32-13.71-3.61-20.92-2.44-15.01,2.45-23.4-1.61-31.58-14.45-2.44-3.83-5.52-7.63-9.15-10.27-19.75-14.37-22.02-32.7-13.27-55.08,3.41-8.72,8.92-16.63,13.97-25.8-6.87-4.4-14.35-8.96-21.58-13.88-6.73-4.58-13.37-9.33-19.75-14.39-7.24-5.75-12.04-13.01-13.79-22.46-.92-4.96-3.77-9.54-5.59-14.35-4.25-11.18-9.18-22.17-12.38-33.64-3.46-12.37,1.42-23.24,12.19-30.23,5.24-3.4,9.68-7,10.31-13.72.09-.95.47-2.06,1.1-2.76,9.26-10.19,8.62-23.3,10.62-35.63,4.51-27.75,22.87-40.9,50.61-36.16,8.66,1.48,17.08,4.05,26.16,2.58,5.53-.89,9.68-3.49,10.55-9.19.4-2.63.58-5.3.85-7.95,2.2-21.25,12.59-36.65,32.69-44.6,8.01-3.17,16.37-5.71,24.79-7.45,3.63-.75,8.13.6,11.68,2.21,3.42,1.56,6.06,1.71,8.61-.78,9.07-8.88,18.97-8.95,29.82-3.56,3.31,1.65,7.26,1.99,10.84,3.14,2.65.85,5.47,1.63,7.73,3.16,7.82,5.29,17.64,3.71,23.11-4.09,2.39-3.41,4.7-6.87,7.04-10.32,13.81-20.38,32.04-25.98,54.68-16.2,13.58,5.86,24.44,14.73,29.35,29.54.88,2.67,3.52,4.72,5.24,7.14,3.42,4.82,6.71,9.74,10.16,14.54,2.28,3.18,4.21,6.9,7.19,9.23,11.51,8.99,15.66,20.33,12.3,34.44-1.3,5.46-2.84,10.86-4.51,17.19,4.77.51,8.82,1.28,12.88,1.32,7.69.08,14.74,1.82,21.43,5.75,4.28,2.51,9.32,3.72,13.57,6.27,3.26,1.96,6.67,4.64,8.44,7.86,2.54,4.63,5.65,8.13,10.28,10.42,1.34.66,2.68,1.34,3.99,2.07,8.55,4.8,11.12,9.76,9.15,19.4-1.39,6.81.47,11.78,6.44,15.22,22.14,12.78,23.39,39.03,7.91,56.6-11.69,13.26-26.1,23.12-42.12,30.61-1.93.9-3.8,1.93-5.97,3.03,8.53,12.48,6.26,24.25-1.54,35.57-3.97,5.76-5.77,11.73-4.68,18.81,1.01,6.5-1,12.6-4.82,17.91-3.6,5-7.44,9.83-11.31,14.62-2.79,3.46-6.59,3.96-10.84,3.65-2.69-.2-5.76-.06-8.08,1.08-1.55.77-3.12,3.68-2.94,5.45,1.88,18.04-7.74,29.94-26.06,31.51-3.63.31-7.37.36-10.98-.11-14.86-1.94-29.16.16-43.26,4.94-11.96,4.05-23.82,8.57-36.79,8.49-14.67-.1-27.1-6.01-38.7-14.3-2.16-1.54-4.28-3.14-6.33-4.64ZM602.1,307.41c.09-.25.18-.51.27-.76,1.68.87,3.46,1.6,5.04,2.64,12.38,8.15,24.85,16.18,37.05,24.6,10.01,6.9,19.62,14.38,29.59,21.35,1.41.99,4.81,1.47,5.61.62,6.22-6.67,13.7-13.28,14.05-22.93.42-11.66,3.42-22.16,8.5-32.47,3.92-7.95,2.44-15.71-3.57-22.21-3.95-4.26-8.16-8.36-12.7-11.96-18.39-14.59-39.69-22.33-62.77-25.01-12.17-1.41-24.5-1.98-36.76-1.94-6.13.02-12.47,1.87-16.14,8.16,24.98,7.1,56.52,27.89,65.13,37.54-3.93-2.01-7.7-4.29-11.5-6.51-16.58-9.67-33.49-18.48-52.26-23.41-7.33-1.93-12.3.57-17.06,5.48,26.73,15.03,56.41,34.85,61.93,41.74-1.82-.89-2.82-1.29-3.73-1.84-7.27-4.41-14.34-9.16-21.81-13.19-13.47-7.27-27.14-14.18-40.82-21.03-1.37-.69-4.48-.63-5.06.24-7.26,10.81-18.34,15.57-29.97,19.57-2.57.88-5.16,1.74-7.18,2.42,11.27,10.19,22.38,20.24,33.48,30.28l-1.37,1.64c-1.58-1.29-3.09-2.66-4.74-3.84-11.07-7.96-21.99-16.14-33.32-23.71-5.95-3.97-11.51-1.76-14.46,4.82-1.02,2.26-1.99,4.62-2.49,7.04-6.29,30.5-.23,59.13,17.1,84.23,11.18,16.19,29.23,23.89,49.2,20.16,19.46-3.63,38.44-9.83,57.93-14.98-7.46-8.21-15.39-16.93-23.32-25.65.3-.33.6-.66.9-1,1.74,1.39,3.51,2.73,5.21,4.16,7.65,6.44,15.21,12.99,22.93,19.34,9.33,7.68,25.77,7.37,35.03-.5,6.11-5.2,7.39-11.78,3.11-18.6-1.82-2.9-4.22-5.68-6.94-7.74-14.61-11.05-29.41-21.85-44.15-32.73-3.13-2.31-6.28-4.6-9.42-6.9,1.36-.57,2.28-.35,3.04.12,18.61,11.39,37.26,22.71,55.76,34.27,6.23,3.89,8.35,4.19,15.81-.6-21.9-17.12-43.5-34.01-65.11-50.9ZM442.35,347.33l.93.53c-.6,1.46-1.19,2.93-1.81,4.38-3.71,8.73-8.38,17.19-10.91,26.25-3.15,11.29-4.7,23.04-6.51,34.66-.29,1.85,1.66,4.05,2.57,6.09.51-.19,1.03-.38,1.54-.57,1.96-16.57,4.53-32.96,13.66-47.38.28,1.25-.03,2.33-.35,3.4-4.72,15.4-7.52,31.09-6.53,47.26.29,4.82.56,9.89,6,12.21,5.3,2.25,9.24-.57,13.11-3.7,5.18-4.19,10.11-8.81,15.75-12.25,6.74-4.12,8.58-9.59,8.53-17.12-.09-14.96.69-29.93,1.08-44.89,0-.33-.35-.68-1.15-2.1-2.24,11.26-4.27,21.42-6.29,31.58-.93-1.56-1.12-3.02-1.23-4.49-.9-12.38,2.27-24.08,5.77-35.77.78-2.6,1.05-5.55.74-8.25-1.4-12.57-.65-24.94,2.74-37.13.59-2.12,1.28-4.22,2.05-6.73-4.79.24-8.99.97-13.07.55-10.93-1.12-19.14,3.57-26.74,10.77-13.94,13.2-25.07,28.44-34.28,45.19-.87,1.59-1.92,3.08-2.89,4.61-.43-.3-.86-.61-1.29-.91,8.4-23.71,23.36-42.89,42.95-59.58-9.45-1.38-18.18-1.95-26.5-4.09-7.63-1.96-13.52.23-19.62,4.17-16.24,10.5-29.91,23.85-42.95,37.93-1.85,2-3.71,3.98-5.57,5.97-.39-.38-.77-.77-1.16-1.15,12.89-19.82,30.23-35.3,49.46-49.19-2.49-.21-4.93-.38-6.86.54-9.15,4.36-18.76,8.11-27.08,13.74-19.98,13.52-33.27,31.9-36.78,56.39-2.1,14.65,4.69,26.62,17.32,30.42,7.12-22.25,16.47-43.29,33.4-60.08,0,1.21-.44,2.19-1.01,3.09-11.45,17.9-21.44,36.4-25.63,57.56-2.71,13.65,10.44,27.54,24.01,24.42,9.39-2.16,17.95-1.45,26.6,2.86,7.77,3.88,12.4,1.15,13.88-7.29.2-1.15.39-2.3.55-3.45,2.78-19.07,9.59-36.67,19.6-53.06,1.16-1.89,2.64-3.58,3.98-5.37ZM493.01,204.93c-.36.35-.71.71-1.07,1.06-1.75-1.67-3.56-3.29-5.25-5.01-14.86-15.13-25.93-32.88-35.77-51.51-2.65-5.01-6.08-6.42-11.57-5.08-7.35,1.79-12.59,6.42-16.94,12.41-3.5,4.82-4.42,9.69-.92,14.75,7.67,11.06,15.44,22.05,23.23,33.03,1.28,1.81,2.82,3.42,4.24,5.13-.36.36-.72.73-1.08,1.09-1.53-1.33-3.28-2.47-4.55-4.01-8.9-10.77-17.78-21.55-26.49-32.47-4.24-5.31-7.72-4.98-10.63,1.42-2.79,6.11-2.3,12.36-.53,18.57,6.28,21.94,19.96,38.42,38.11,51.65,3.46,2.52,6.88,2.96,10.71,1.35,7.97-3.34,15.93-6.72,23.93-10.01,11.34-4.66,23-8.1,35.43-7,12.53,1.11,23.59,5.34,30.92,17.12,7.68-12.22,10.36-24.9,9.01-38.33-2.19-21.85-12.26-40.32-26.35-56.58-9.01-10.4-20.49-17.55-34.28-20.12-3.4-.64-7.02-.09-11.22-.09,3.76,9.49,7.03,17.75,10.3,26.02-4.02-4.65-6.95-9.83-9.98-14.94-6.24-10.51-8.01-10.91-18.7-4.37-.71.43-1.38.93-2.06,1.41-3.31,2.39-4.49,5.07-2.85,9.33,5.75,14.89,13.75,28.44,23.41,41.06,3.62,4.72,7.29,9.4,10.94,14.09ZM550.08,255.85c3.88-3.62,7.83-6.09,10.12-9.63,10.63-16.5,20.82-33.28,31.13-49.99,1.08-1.76,1.92-3.67,2.87-5.5.47.23.93.46,1.4.68-3.47,14.41-11.1,27.07-18.06,40.05,1.45-1.22,2.49-2.66,3.51-4.1,9.01-12.76,15.32-26.9,20.84-41.39,7.92-20.79,10.76-42.27,7.41-64.33-1.52-9.99-4.13-19.77-9.93-27.05,1.64,12.62,3.94,26.02,5,39.52,1.37,17.41-1.38,35.61-5.38,40.51.29-2.1.5-3.72.73-5.33,3.47-23.91,3.16-47.53-5.8-70.38-.93-2.37-3.88-6.2-4.87-5.91-4.26,1.27-1.5,5.05-1.21,7.57,2.54,22.25,3.94,44.48.43,66.76-.6,3.78-1.48,7.52-2.38,12.07-.87-1.25-1.2-1.5-1.19-1.74.06-.99.22-1.98.35-2.97,3.37-25.85,2.6-51.53-3.58-76.92-1.91-7.87-8.25-10.99-15.94-8.32-6.98,2.43-11.43,10.04-10.07,17.49,1.34,7.37,3.07,14.67,4.21,22.07,1.27,8.24,2.06,16.56,3.07,24.84-.5.08-.99.16-1.49.23-.36-1.35-.73-2.71-1.07-4.06-3.27-12.88-6.53-25.77-9.81-38.65-.77-3.04-2.29-4.74-5.7-3.27-16.01,6.88-21.79,27.82-11.8,40.08,9.12,11.19,16.44,23.42,21.87,36.77,6.05,14.88,8.31,30.27,4.29,45.96-2.07,8.09-5.6,15.8-8.92,24.95ZM711.05,142.83c.24-.58.48-1.15.72-1.73-2.29-1.9-4.33-4.26-6.91-5.61-5.9-3.08-11.86-6.22-18.14-8.33-18.05-6.08-35.37-5.91-50.53,7.7-1.73,1.56-3.63,2.95-5.27,4.6-5.72,5.76-11.96,11.14-14.4,19.37-3.45,11.64-6.47,23.44-10.6,34.84-3.51,9.7-8.32,18.93-12.58,28.42.78-.41,1.66-.81,2.48-1.31,26.39-16.02,54.89-26.07,85.5-30.1,17.8-2.34,35.6-4.64,52.65-6.85,0-5.12-.23-9.87.06-14.58.33-5.35-1.35-9.42-6.08-12.15-3.31-1.91-6.79-3.65-9.76-6.02-3.27-2.62-6.57-2.83-10.28-1.71-7.8,2.36-15.71,4.42-23.37,7.15-22.93,8.17-43.49,20.73-63.25,34.73-1.7,1.2-3.57,2.18-5.35,3.26,26.82-26.31,60.17-40.47,95.11-51.66ZM638.17,225.44c-.02-.51-.03-1.02-.05-1.53.82-.33,1.64-.92,2.48-.96,11.27-.53,22.69-2.38,33.78-1.17,24.79,2.7,49.43,6.85,74.1,10.66,2.91.45,4.17-.27,5.52-2.57,10.67-18.25-.75-39.31-21.88-39.83-7.81-.19-15.64.49-23.46.93-39.77,2.23-76.43,13.99-109.69,36.05-1.67,1.11-3.28,2.32-6.05,4.29,5.23,0,8.92.34,12.53-.06,23.95-2.64,47.65-.28,71.1,4.18,18.94,3.61,37.63,8.54,56.45,12.79,1.68.38,4.13.85,5.17,0,3.99-3.27,7.55-7.07,11.84-11.22-37.38-11.49-74.63-11.32-111.83-11.57ZM340.69,160.51c-.29.5-.58,1.01-.87,1.51-10.67-5.15-21.34-10.31-31.02-14.98-3.96,8.58-7.95,17.07-11.78,25.64-.93,2.09-1.93,4.48-1.78,6.65.16,2.24,1.07,5.31,2.72,6.4,5.87,3.88,12.2,7.08,17.91,10.28,2.87-7.5,4.82-14.43,8.08-20.69,4.78-9.17,11.65-10.84,20.86-6.45,4.84,2.31,9.85,4.24,14.81,6.35.3-.85.42-1.02.39-1.14-.42-1.61-.84-3.21-1.29-4.81-2.83-10.04-2.74-19.41,5.74-27.12,1.1-1,1.71-2.83,2.01-4.37,1.01-5.15,3.62-9.05,7.72-12.37,5.44-4.42,6.71-10.59,6.44-16.79-12-1.88-23.27-4-34.63-5.33-16.35-1.91-29.52,6.08-34.8,21.32-5.76,16.65-4.75,13.34,6.92,21.5,7.3,5.11,15.02,9.63,22.56,14.42ZM476.24,273.14c0,.26-.01.53-.02.79-2.3-.11-4.66.06-6.89-.39-14.18-2.86-28.33-5.89-42.5-8.8-2.56-.53-5.81-1.93-7.67-.93-8.33,4.47-16.28,9.66-24.98,14.97,6.13,1.1,11.37,2,16.6,2.97,27.28,5.1,54.61,8.85,82.33,3.52,12.85-2.47,25.2-6.44,36.26-13.56,5.68-3.66,11.29-8.16,10.52-15.78-.79-7.83-6.77-12.28-13.64-14.44-6.57-2.06-13.6-3.7-20.43-3.73-16.98-.09-31.52,8.03-46.32,16.6,16.71,3.32,33.42,6.64,50.13,9.97-1.76.8-3.51,1-5.2.77-15.31-2.14-30.71-3.78-45.86-6.74-10.08-1.97-19.62-1.48-29.58,2.29,15.75,4.16,31.5,8.33,47.24,12.49ZM559.98,71.61c-.46.21-.93.42-1.39.63-1.64-3.66-3.36-7.29-4.89-11-2.75-6.63-5.7-7.64-11.61-3.57-1.86,1.28-3.39,3.06-5.64,5.13,12.2,3.3,21.17,9.44,24.45,21.97,7.9-3.82,14.8-2.41,21.67,1.12,1.5.77,3.89.63,5.58.04,9-3.11,12.21-2.28,17.61,5.76,6.06,9.01,9.25,19.16,10.68,29.83.96,7.15,1.43,14.36,2.13,21.69,6.67-5.83,13.44-11.21,19.51-17.29,2.82-2.82,4.61-6.86,6.27-10.6,1.61-3.64.56-7.03-2.6-9.56-4.41,5.05-8.64,9.9-12.87,14.75-.37-.28-.74-.56-1.11-.83,5.11-10.9,15.53-20.92,6.15-34.84-5.57,10.15-10.87,19.8-16.17,29.46l-1.85-.94c.9-2.24,1.82-4.46,2.68-6.71,3.65-9.47,7.9-18.75,10.76-28.45,3.31-11.24-4.29-24.49-14.89-27.66-4.25-1.27-8.57-2.27-13.1-3.46-2.18,8.32-4.34,16.52-6.49,24.72-1.04-1.31-.99-2.38-.91-3.45.55-7.3,1.05-14.61,1.68-21.91.43-4.97-2.3-7.25-6.63-8.47-6.6-1.86-11.05,2.16-15.74,5.59-3.88,2.84-7.61,5.93-11.74,8.32-2.6,1.5-3.59,3.18-3.24,5.96.58,4.59,1.14,9.17,1.71,13.76ZM439.89,88.51c2.41-5.04,7.54-8.73,14.66-8.83,3-.04,4.2-1.51,5.89-3.54,4.98-5.99,9.9-12.18,15.77-17.21,3.12-2.68,8.07-4.06,12.32-4.39,8.11-.62,8.22-.21,7.77-8.48-.06-1.16-.12-2.33-.27-3.49-1.2-9.31-11.05-14.32-18.94-9.11-5.74,3.78-10.92,8.26-19.03,6.19.47,7.81.87,14.46,1.26,21.11l-1.43.24c-1.49-6.36-3.27-12.66-4.38-19.08-.74-4.23-3.08-5.31-6.65-4.63-12.35,2.38-24.41,5.87-34.46,13.75-12,9.42-15.71,22.41-14.97,38.21,8.32-3.85,15.56-2.17,22.66,1.45,1.01.51,2.52.18,3.78.02,4.83-.62,9.65-1.33,16.02-2.22ZM348.77,226.96c-.17.48-.34.95-.5,1.43-6.63-1.47-13.27-2.87-19.89-4.41-8.9-2.07-5.92-3.1-11.07,4.54-.46.69-.74,1.49-1.18,2.19-1.7,2.74-.81,4.46,1.84,6.05,12.47,7.49,25.92,11.8,40.34,13.71,7.8,1.03,12.98-1.55,16.96-8.11,1.42-2.35,1.5-3.88.29-6.26-2.79-5.48-5.86-10.97-7.49-16.83-1.22-4.39-2.12-10.4-.07-13.84,3.64-6.09,1.6-10.37-.84-15.52-1.8-3.8-4.16-6.53-8.12-8.14-6.01-2.44-11.85-5.29-17.82-7.83-6.35-2.71-8.15-2.11-11.89,3.7-.89,1.39-1.55,2.94-2.28,4.43-4.38,9.04-3.78,18.72-4.11,28.39-.19,5.59,1.94,8.29,6.74,9.88,3.63,1.21,7.2,2.56,10.81,3.82,2.75.96,5.52,1.87,8.28,2.8ZM405.83,145.71c1.83-1.92,2.83-2.81,3.61-3.85.85-1.14,1.86-2.34,2.17-3.66,1.72-7.37,4.38-9.38,11.68-9.45,1.56-.02,4.09-1.6,4.49-2.95,2.41-8.35,10.75-9.54,16.29-14.05.42-.34,1.32-.03,1.95-.2,1.36-.38,2.68-.93,4.05-1.31,2.35-.66,4.7-1.29,7.07-1.87,1.37-.33,2.97-.18,4.12-.86,8.08-4.74,16.17-6.88,24.64-.92.63.44,1.56.68,2.34.66,8.62-.27,17.19-.37,24.92,4.44.49.3,1.28.1,1.94.15,4.03.3,8.06.61,12.1.91,1.43.07,2.54-1.67,4.09-2.82,3.29-2.43,3.19-5.2,1.11-8.09-3.48-4.82-6.82-9.81-10.86-14.12-3.34-3.57-7.95-5.19-13.59-4.57,1.03,5.8,2.01,11.33,2.98,16.86-2.52-3.13-3.95-6.57-5.33-10.03-3.35-8.38-5.97-10.41-14.16-7.07-11.63,4.75-22.72,6.72-35.24,3.17-8.19-2.32-13.05,4.03-11.37,12.52.57,2.88,1.11,5.76,1.67,8.64-.42.09-.85.19-1.27.28-.74-1.04-1.51-2.07-2.23-3.14-7.57-11.16-16.98-11.98-25.51-1.47-7.6,9.36-11.31,20.66-13.05,32.48-.43,2.94.79,6.13,1.42,10.31ZM367.28,149c-4.72,3.8-5.07,8.9-3.47,13.71,3.03,9.12,6.8,17.99,10.35,26.92.44,1.1,1.4,1.98,2.14,2.98.5-.42.67-.5.75-.64,4.06-7.53,8.45-14.54,18.64-14.15.92.04,2.54-1.72,2.78-2.87,1.34-6.31,2.42-12.69,3.43-19.06.22-1.39.14-3.05-.41-4.31-4.37-9.93-3.97-19.85.26-29.59,3.92-9.03,8.32-17.84,12.54-26.82-6.38-3.97-13.4-3.09-18.81,2.7-3.59,3.85-5.68,9.2-7.99,14.1-1.76,3.74-2.01,8.4-4.37,11.59-4.18,5.64-2.57,10.54.09,15.73,1.99,3.89,4.1,7.73,6.15,11.59-.48.31-.96.63-1.43.94-4.29-5.68-8.59-11.35-13.19-17.43-1.08,1.97-3.12,3.95-2.77,5.33,2.41,9.47,5.33,18.82,8.52,29.71-4.77-7.39-8.89-13.77-13.2-20.43ZM439.78,250.03c-2.15-1.74-3.82-3.05-5.44-4.43-17.76-15.03-30.72-33.12-35.82-56.24-1.1-4.98-4.24-6.36-8.54-3.5-2.14,1.43-3.86,3.6-5.48,5.66-2.56,3.27-4.51,7.09-7.37,10.04-4.83,4.96-5.5,10.39-3.23,16.53,5.96,16.04,15.69,29.21,29.65,39.24,3.56,2.55,6.77,3.66,10.74.66,2.46-1.86,5.49-2.99,8.72-4.68-9.48-9.04-18.82-17.95-24.2-29.98,1.91.9,3.16,2.38,4.55,3.73,7.16,6.94,14.29,13.92,21.57,20.74,3.97,3.72,8.73,4.38,14.86,2.23ZM314.83,243.21c-2.29,6.84-.76,13.85,3.68,20.05,10.43,14.57,23.91,25.33,41.01,31.19,1.81.62,4.26,1.23,5.77.51,6.16-2.97,12.08-6.46,18.38-9.91-19.34-3.62-26.09-12.45-19.63-28.55-16.14-4.36-32.41-8.75-49.21-13.29ZM306.81,240.72c1.49-4.52,1.98-9.31,4.4-12.72,5.15-7.25,7.08-14.95,5.81-23.51-.26-1.75-1.58-3.97-3.07-4.79-6.25-3.44-12.62-6.74-19.21-9.44-2.46-1.01-5.98-1.06-8.47-.1-12.65,4.85-17.22,25.06-7.57,34.63,7.99,7.92,18.13,12.62,28.1,15.92ZM539.73,102.77c8.62-1.42,13.21-6.7,14.36-14.27,1.08-7.15-4.82-14.33-13.13-17.47-2.46-.93-5.1-1.68-7.71-1.89-6.69-.53-13.17-1.37-19.01-5.16-1.7-1.1-4.09-1.32-6.2-1.55-6.25-.67-12.51-1.37-18.78-1.58-2.85-.1-6.14.22-8.54,1.59-7.26,4.14-12.3,10.41-15.48,18.41,6.12,3.07,11.62,1.79,17.43-.5,20.85-8.21,42.29-4.95,53.9,17.19.92,1.75,2.05,3.4,3.16,5.22ZM586.64,27.03c-.5-.12-1-.23-1.49-.35.67-4.92,1.57-9.82,1.87-14.76.09-1.45-1.17-3.89-2.4-4.37-8.1-3.14-20.91,1.98-24.43,9.78-4.13,9.15-2.89,18.35.57,28.44,4.08-3.35,7.63-6.26,11.18-9.17,9.83-8.07,21.47-7.43,30.51,1.41,1.96,1.91,4.66,3.07,7.25,4.72,3.86-7.38,3.8-14.14,2.8-20.93-.19-1.29-1.31-2.86-2.46-3.53-5.35-3.15-10.87-6.04-16.99-9.38-2.42,6.85-4.41,12.49-6.41,18.14ZM281.59,234.01c-.42.23-.84.46-1.26.69,1.44,3.55,2.8,7.13,4.34,10.63,2.26,5.14,4.49,10.31,7.04,15.31,1.28,2.5,2.81,5.28,5.01,6.82,3.92,2.75,8.4,4.72,12.7,6.89,2.07,1.05,4.26,1.89,6.46,2.67,2.17.77,4.41,1.35,6.62,2.01-8.04-9.49-15.31-18.67-14.58-31.74.05-.92-1.16-2.37-2.13-2.8-8.02-3.6-16.12-7.01-24.2-10.48ZM553.3,47.98c-7.41-5.04-14.49-5.63-21.85-4.31-7.29,1.3-14.13,1.45-20.36-3.67-1.71-1.4-4.63-1.6-7.03-1.76-.92-.06-2.65,1.42-2.8,2.39-.62,3.93-.73,7.93-1.12,11.9-.28,2.88,1.07,4.08,3.77,3.69,6.81-.96,12.77,1.13,18.46,4.64,3.53,2.18,6.83,1.16,9.37-1.79,5.42-6.3,11.89-10.57,21.55-11.09ZM380.06,245.29c-3.35,4.73-7.16,9.74-10.52,15.02-2.61,4.09-1.74,8.34.98,12.15,2.56,3.59,6.3,4.87,10.52,4.35,8.41-1.03,14.71-5.95,20.08-10.45-7.01-7.01-13.68-13.69-21.05-21.07ZM354.99,301.55c-16.18-14.28-36.57-19.48-56.38-26.16,1.5,2.39,3.03,4.69,5.16,6.14,11.77,8.03,23.48,16.21,35.64,23.62,7.35,4.48,9.77,3.38,15.58-3.6ZM642.1,236.96c1.75.4,3.49.88,5.25,1.17,22.39,3.71,44.18,9.54,65.02,18.65,9.07,3.97,11.77,3.39,19.41-4.31-28.92-10.82-59.01-14.3-89.68-15.52ZM651.1,119.75c12.39-20.15,13.28-39.7-2.72-48.57-1.24,4.97-2.78,9.91-3.64,14.97-.97,5.69-2.89,11.58,3.76,15.99,1.96,1.3,2.59,5.21,3.03,8.04.42,2.71-.2,5.58-.44,9.57ZM615.33,43.4c14.81,4.99,20.61,15.76,21.34,30.24.14,2.69,1.88,5.31,3.18,8.76,5.39-11.06,3.78-22.43-4.42-30.34-5.52-5.34-9.83-11.14-12.25-18.44-.69-2.08-2.25-3.87-3.99-6.76-1.42,6.09-2.57,11.02-3.86,16.54ZM672.15,247.13c-.07.38-.14.76-.2,1.14,7.58,5.33,15.25,10.53,22.7,16.04,6.43,4.75,14.64,4.2,21.18-2.54-14.86-4.98-29.27-9.81-43.68-14.64ZM520.91,138.13c.73-8.16-7.16-21.17-13.89-23.49-2.79-.96-6.8-1.27-6.58,2.45.24,4.11,1.81,9.2,4.67,11.84,4.25,3.92,10.15,6.05,15.8,9.21ZM451.68,140.54c4.2-3.11,7.08-5.25,10.67-7.91-2.98-3.12-5.51-6.1-8.43-8.64-1.03-.9-3.56-1.44-4.45-.8-1.18.84-2.23,3.18-1.92,4.55.91,4.07,2.52,7.97,4.14,12.8ZM484.71,368.38c-.46-.02-.92-.04-1.38-.07-1.75,12.3-1.31,24.5,2.12,36.77,1.61-2.46,2.69-5.09,2.55-7.65-.29-5.47-1.22-10.91-1.86-16.36-.5-4.23-.95-8.46-1.42-12.69ZM543.19,36.8c3.9,1.22,7.43,2.32,11.28,3.52-.57-5.59-1.12-10.89-1.77-17.23-3.52,5.07-6.43,9.27-9.51,13.72ZM464.61,128.59c.63-7.49-1.43-12.49-5.67-13.94-2.69-.92-5.14-.74-6.61,2.31,4.18,3.97,8.11,7.69,12.28,11.64ZM445.29,137.43c-1.51-3.99-2.46-7.73-4.35-10.92-.77-1.3-3.57-1.39-5.45-2.03-.34,2.1-1.64,4.77-.82,6.2,2.03,3.5,4.64,7.03,10.61,6.75ZM489.47,125.56c-1.72-2.52-2.71-4.79-4.41-6.19-1.51-1.25-3.81-1.54-5.76-2.25-.62,1.9-1.93,3.89-1.7,5.68.33,2.57,2.01,4.46,5.3,3.62,1.87-.48,3.86-.52,6.57-.86ZM495.59,126.68c.4-.3.79-.6,1.19-.9-.23-2.75-.34-5.52-.72-8.25-.69-4.95-4.26-6.47-9.74-3.36,3.15,4.25,6.21,8.38,9.27,12.52ZM422.72,147.71c.64-3.79,1.43-6.14,1.29-8.43-.1-1.71-1.41-3.34-2.18-5-1.28.6-3.35.94-3.67,1.87-.62,1.81-.76,4.14-.14,5.92.6,1.71,2.41,3,4.7,5.64ZM414.25,159.23c1.74-2.68,3.03-4.09,3.61-5.74.5-1.41.83-3.74.07-4.52-1.14-1.17-3.3-1.34-5.03-1.93-.55,1.61-1.7,3.3-1.51,4.81.28,2.16,1.55,4.19,2.86,7.39ZM469.64,128.71c.53.25,1.05.5,1.58.76,1.05-.94,3.09-2.03,2.98-2.8-.41-2.78-1.54-5.46-2.4-8.17-.85.7-2.37,1.36-2.42,2.11-.18,2.68.14,5.4.27,8.1ZM491.49,395.69c3.93-4.21,3.67-6.01-1.31-10.68.45,3.66.86,6.97,1.31,10.68ZM472.52,112.05c-2.01-1.12-3.17-2.3-4.14-2.17-1.26.18-2.71,1.18-3.4,2.27-.33.52.92,2.04,1.46,3.11,1.91-1.01,3.33-1.76,6.08-3.21Z"/>
+                    <path fill="currentColor" d="M257.21,536.71c5-9.56,9.55-18.22,14.07-26.9,8.99-17.27,18.01-34.52,26.9-51.84,1.3-2.54,2.81-3.63,5.77-3.55,8.16.23,16.33.07,24.49.23,1.02.02,2.01,1.1,3.02,1.68-.84.83-1.53,2.09-2.53,2.42-9.17,2.96-9.45,3.02-9.43,12.78.07,29.99.29,59.97.46,89.96.04,6.66.06,13.33.17,19.99.12,7.17,1.38,8.59,8.18,10.42,1.26.34,2.26,1.66,3.37,2.52-1.25.51-2.49,1.45-3.74,1.46-13.47.11-26.94.07-40.41.07-.27-.5-.53-.99-.8-1.49,1.21-.87,2.3-2.18,3.65-2.53,6.86-1.79,8.07-2.58,8.19-9.81.32-19.48.24-38.98.28-58.46.03-15.63,0-31.26,0-46.89-.49-.14-.97-.28-1.46-.42-15.68,29.9-31.36,59.81-47.72,91.03-18.09-30.46-35.66-60.02-53.39-89.86,0,14.79-.26,29.04.07,43.28.41,17.82,1.31,35.62,2.03,53.43.09,2.33.29,4.66.57,6.97.9,7.57,1.86,8.58,8.98,10.63,1.16.34,2.09,1.5,3.12,2.27-1.12.63-2.23,1.8-3.37,1.82-9.16.16-18.32.15-27.49.03-1-.01-1.99-1.06-2.98-1.62.81-.81,1.48-2.04,2.45-2.36,7.36-2.47,8.62-3.56,8.68-11.25.22-31.65.23-63.29.27-94.94,0-5.66-.01-11.33-.3-16.98-.35-6.86-1.64-8.1-8.36-9.73-1.44-.35-2.7-1.47-4.05-2.23.22-.83.45-1.65.67-2.48,10.11,0,20.22-.15,30.31.18,1.37.04,3,2.31,3.93,3.89,14,23.64,27.89,47.35,41.83,71.03,1.26,2.14,2.63,4.22,4.53,7.27Z"/>
+                    <path fill="currentColor" d="M79.52,454.95c7.47,0,14.95-.16,22.4.16,1.16.05,2.65,2.09,3.28,3.52,17.54,39.9,34.98,79.85,52.49,119.77,2.59,5.9,4.55,12.44,12.38,13.74.53.09,1.26,1.56,1.14,2.24-.12.63-1.27,1.5-1.97,1.51-12.16.11-24.32.13-36.48.06-.68,0-1.36-1.02-2.04-1.56.66-.79,1.15-1.95,1.99-2.3,6.4-2.65,6.78-3.24,4.31-9.81-2.58-6.85-5.26-13.66-8.12-20.4-.75-1.76-2.06-3.44-3.5-4.73-17.86-15.97-47.89-13.9-63.43,4.36-1.16,1.37-2.14,3-2.81,4.67-11.98,29.8-23.9,59.63-35.8,89.46-.72,1.82-1.19,3.73-1.95,6.14,2.18.55,3.93.87,5.58,1.46.78.28,1.36,1.1,2.03,1.67-.67.55-1.34,1.57-2.02,1.58-8.16.12-16.32.15-24.48.04-.84-.01-1.67-1.09-2.51-1.67.81-.64,1.59-1.78,2.45-1.84,4.64-.31,6.21-3.38,7.72-7.22,24.84-63.37,49.79-126.7,74.77-190.01,1.45-3.68,1.15-6.01-3.12-7.09-1.12-.28-1.98-1.61-2.96-2.45.22-.43.44-.86.66-1.29ZM91.69,475.58c-9.83,25.27-19.25,49.47-28.66,73.67,8.97-5.53,18.22-9.71,28.27-9.76,9.88-.04,19.77,1.92,29.39,2.97-9.26-21.36-18.9-43.59-29-66.88Z"/>
+                    <path fill="currentColor" d="M866.65,593.81c.94-.94,1.73-2.41,2.84-2.72,4.72-1.31,6.92-4.74,8.69-8.9,13.25-31.24,26.54-62.46,39.89-93.66,3.33-7.8,6.94-15.48,10.36-23.23,1.25-2.84,2.5-5.74-1.9-7.22-.49-.16-1.08-1.57-.86-1.93.44-.71,1.4-1.54,2.16-1.55,7.16-.13,14.32-.18,21.48.07.59.02,1.85,3.34,1.54,3.6-4.51,3.68-2.07,7.73-.53,11.37,8.73,20.66,17.95,41.12,26.45,61.88,16.78,40.97,33.21,82.08,49.73,123.15,1.59,3.96,2.86,7.9,8.24,7.96.78,0,1.55,1.44,3.31,3.2h-29.65l-.62-1.4c1.39-.66,2.73-1.76,4.16-1.9,3.88-.37,4.25-2.07,2.91-5.33-12.67-30.6-24.87-61.4-38.25-91.68-2.4-5.42-9.01-9.81-14.67-12.81-17.04-9.06-33.94-8.14-49.81,3.37-1.68,1.22-3.38,2.94-4.15,4.8-3.12,7.52-6.01,15.15-8.73,22.83-1.29,3.63-.53,6.56,3.98,7.48.98.2,1.75,1.43,2.61,2.18-1.05.52-2.09,1.48-3.15,1.49-11.65.11-23.29.07-34.94.07l-1.09-1.11ZM940.86,476.53c-10.49,24.44-20.43,47.57-30.95,72.09,21.04-12.32,40.64-11.37,60.59-.14-9.7-23.56-19.41-47.11-29.63-71.94Z"/>
+                    <path fill="currentColor" d="M678.39,597.17c-40.52-.31-72.39-32.52-71.94-72.69.45-39.94,33.46-72.47,73.17-72.12,39.74.35,70.05,32.3,69.65,73.42-.39,39.84-32.01,71.69-70.88,71.39ZM726.27,527.15c-.17-16.82-2.49-31.34-9.5-44.79-15.13-29.05-53.88-32.49-73.23-6.01-5.16,7.06-8.85,15.78-11.05,24.29-6.39,24.8-4.75,49.18,9.67,71.06,18.44,27.98,57.25,26.32,74.01-2.64,7.84-13.55,9.68-28.48,10.09-41.92Z"/>
+                    <path fill="currentColor" d="M518.5,537.53c0,15.32-.04,30.62.02,45.91.02,5.7,3.97,7.47,8.75,8.49,1.29.27,2.38,1.53,3.56,2.34-1.34.58-2.67,1.65-4.01,1.66-13.14.13-26.28.08-39.42.08-.29-.46-.57-.92-.86-1.38,1.14-.92,2.14-2.3,3.43-2.67,7.18-2.09,8.36-3.2,8.37-10.82.05-37.49.02-74.98-.08-112.46-.02-7.15-1.24-8.22-8.57-9.76-1.22-.26-2.26-1.38-3.39-2.1.88-.7,1.77-2,2.65-2,23.96-.09,48.02-2.23,71.77,2.46,11.45,2.26,22.06,6.66,29.39,16.5,13.42,18.04,7.02,44.66-13.42,55.8-11.14,6.07-23.29,7.75-35.74,7.94-7.31.11-14.63.02-22.44.02ZM519.42,461.4c-.31.8-.53,1.1-.53,1.41-.07,21.33-.17,42.66-.04,63.98,0,1.15,1.98,3.26,3.06,3.27,9.28.08,18.75.9,27.8-.65,15.7-2.68,24.93-13.96,26.38-29.72,1.39-15.23-6.4-28.27-20.67-34.23-11.52-4.81-23.56-5.36-36-4.07Z"/>
+                    <path fill="currentColor" d="M482.44,595.88h-40.98c-.29-.4-.58-.8-.86-1.2,1.15-.89,2.19-2.29,3.48-2.59,4.13-.95,5.2-3.48,3.86-7.05-2.93-7.79-5.42-15.87-9.36-23.13-3.69-6.8-10.76-10.46-18.02-12.66-17.21-5.21-33.31-2.52-46.52,9.87-4.29,4.02-6.09,10.76-8.76,16.39-1.2,2.53-1.76,5.37-2.53,8.09-1.13,3.99,0,6.78,4.16,8.23,1.09.38,1.84,1.74,2.74,2.65-1.11.45-2.21,1.28-3.32,1.29-8.33.1-16.66.09-24.99-.01-.98-.01-1.95-.75-2.93-1.15.55-.87.97-2.36,1.66-2.5,7.32-1.43,10.1-7.12,12.49-13.1,11.59-28.9,23.13-57.82,34.64-86.75,3.39-8.51,6.55-17.12,9.91-25.64,1.53-3.88,2.13-7.17-3.2-8.43-.69-.16-1.16-1.26-1.74-1.92.77-.45,1.54-1.29,2.32-1.3,6.33-.11,12.67-.23,18.99.07,1.1.05,2.55,1.85,3.11,3.15,17.22,40.45,34.37,80.94,51.48,121.44,2.38,5.63,4.67,11.14,11.63,12.54.81.16,1.33,1.73,2.74,3.71ZM373.45,549.3c18.56-11.92,37.65-12.37,58.47-3.93-9.89-23.98-19.28-46.75-28.67-69.51-.45.03-.9.06-1.35.09-9.48,24.45-18.97,48.9-28.45,73.35Z"/>
+                    <path fill="currentColor" d="M861.93,595.28c-18.62,0-36.6-.06-54.58.02-14.66.06-29.32.33-43.98.38-1.4,0-2.8-.93-4.2-1.42,1.23-.97,2.35-2.53,3.72-2.8,5.42-1.03,7.46-4.27,7.48-9.52.13-37.49.38-74.98.47-112.47.02-7.98-.71-8.52-8.75-10.69-1.06-.29-1.89-1.38-2.83-2.09,1.08-.66,2.16-1.88,3.25-1.9,12.16-.2,24.32-.26,36.49-.19,1.13,0,2.25,1.18,3.37,1.8-.72.73-1.31,1.83-2.18,2.15-9.45,3.42-9.54,3.39-9.59,13.65-.14,28.83-.22,57.65-.31,86.48-.03,9.79,0,19.59,0,29.09,11.12,0,21.75.2,32.37-.07,6.65-.17,13.28-1.05,19.92-1.6,7.85-.64,13.56-4.2,16.3-11.86.34-.94.6-2.02,1.25-2.7.59-.62,1.75-1.18,2.48-1.01.59.14,1.35,1.43,1.3,2.16-.54,7.27-1.23,14.53-1.95,22.59Z"/>
+                </svg>
+            </div>
+
+            <div class="brand-headline-block">
+                <span class="signature-script-text">para encantar</span>
+                <span class="brand-sub-tag">Diseño Floral & Verdes · Puerto Iguazú</span>
+            </div>
+        </header>
+
+        <!-- BIO CONTEXTUAL HUMANA CON ICONOS EDITORIALES FINOS -->
+        <section class="brand-bio-box">
+            <div class="bio-item-row">
+                <div class="bio-vector-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <path d="M12 6v10"/><path d="M9 10l3-3 3 3"/>
+                    </svg>
+                </div>
+                <span>Diseño floral, interiorismo y arquitectura verde</span>
+            </div>
+            <div class="bio-item-row">
+                <div class="bio-vector-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 21h18M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"/>
+                        <line x1="9" y1="9" x2="10" y2="9"/><line x1="14" y1="9" x2="15" y2="9"/>
+                        <line x1="9" y1="13" x2="10" y2="13"/><line x1="14" y1="13" x2="15" y2="13"/>
+                    </svg>
+                </div>
+                <span>Hotelería de alta gama · Empresas · Espacios comerciales</span>
+            </div>
+            <div class="bio-item-row">
+                <div class="bio-vector-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M12 2a4 4 0 0 1 4 4c0 3-4 6-4 6s-4-3-4-6a4 4 0 0 1 4-4z"/>
+                        <path d="M2 12a4 4 0 0 1 4-4c3 0 6 4 6 4s-3 4-6 4a4 4 0 0 1-4-4z"/>
+                        <path d="M12 22a4 4 0 0 1-4-4c0-3 4-6 4-6s4 3 4 6a4 4 0 0 1-4 4z"/>
+                        <path d="M22 12a4 4 0 0 1-4 4c-3 0-6-4-6-4s3-4 6-4a4 4 0 0 1 4 4z"/>
+                    </svg>
+                </div>
+                <span>Ramos y regalos de autor · Flores eternas preservadas</span>
+            </div>
+            <div class="bio-item-row">
+                <div class="bio-vector-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                </div>
+                <span>Av. República Argentina 135 · Puerto Iguazú, Misiones</span>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             HERO CTA: BOTÓN WHATSAPP CON CORONA ENVOLVENTE EXTERIOR
+             ========================================================================== -->
+        <div class="cta-wreath-perimeter-wrap">
+            <!-- Guirnalda exterior que enmarca las esquinas sin tocar el texto -->
+            <svg class="garland-node gn-top-l"><use href="#flowerAmapolaSoft"/></svg>
+            <svg class="garland-node gn-top-r"><use href="#flowerDaisyRadial"/></svg>
+            <svg class="garland-node gn-side-l"><use href="#foliageBranchSprig"/></svg>
+            <svg class="garland-node gn-side-r"><use href="#rosePreservedBud"/></svg>
+            <svg class="garland-node gn-bot-l"><use href="#rosePreservedBud"/></svg>
+            <svg class="garland-node gn-bot-r"><use href="#foliageBranchSprig"/></svg>
+
+            <a href="https://wa.link/fflwpg" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-wreath" onclick="triggerTactile()">
+                <div class="wpp-text-group">
+                    <span class="wpp-tag-pulse">Atelier Abierto</span>
+                    <h2 class="wpp-main-heading">Consultas & Pedidos por WhatsApp</h2>
+                    <span class="wpp-sub-info">+54 3757 51-9009 · Envíos a Domicilio</span>
+                </div>
+                <div class="wpp-icon-badge">
+                    <svg viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+                </div>
+            </a>
+        </div>
+
+        <!-- ==========================================================================
+             ESCAPARATE DE VIDEOS CLOUDFLARE EN BUCLE
+             ========================================================================== -->
+        <section class="section-block-flow">
+            <div class="section-header-editorial">
+                <h3 class="section-title-serif">Nuestra Esencia <em>en vivo</em></h3>
+                <span class="section-badge-micro">Cloudflare Stream</span>
+            </div>
+
+            <div class="reels-carousel-strip">
+
+                <!-- 1. VIDEO ESPACIOS -->
+                <div class="vase-card-media">
+                    <div class="vase-video-frame">
+                        <span class="sound-indicator-pill" onclick="toggleMute(this, 'vid-espacios')">🔇 Sonido</span>
+                        <video id="vid-espacios" autoplay loop muted playsinline preload="metadata">
+                            <source src="https://amapola-media.pages.dev/ultra_livianos/espacios.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="vase-caption-box">
+                        <span class="vase-tag-human">Espacios con alma</span>
+                        <p class="vase-quote-human">
+                            "Las flores tienen el poder de transformar un espacio, pero también la forma en que ese espacio se vive."
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 2. VIDEO DETALLES -->
+                <div class="vase-card-media">
+                    <div class="vase-video-frame">
+                        <span class="sound-indicator-pill" onclick="toggleMute(this, 'vid-detalles')">🔇 Sonido</span>
+                        <video id="vid-detalles" autoplay loop muted playsinline preload="metadata">
+                            <source src="https://amapola-media.pages.dev/ultra_livianos/detalles.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="vase-caption-box">
+                        <span class="vase-tag-human">Detalles que enamoran</span>
+                        <p class="vase-quote-human">
+                            "Hay detalles que hablan sin decir una sola palabra: un gracias, un te extraño o simplemente un pensé en vos."
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 3. VIDEO EXPERIENCIA -->
+                <div class="vase-card-media">
+                    <div class="vase-video-frame">
+                        <span class="sound-indicator-pill" onclick="toggleMute(this, 'vid-experiencia')">🔇 Sonido</span>
+                        <video id="vid-experiencia" autoplay loop muted playsinline preload="metadata">
+                            <source src="https://amapola-media.pages.dev/ultra_livianos/experiencia.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="vase-caption-box">
+                        <span class="vase-tag-human">Despertar sensaciones</span>
+                        <p class="vase-quote-human">
+                            "¿Y si la ambientación pudiera transportarte a otro lugar? Vegetación tropical, texturas y flores exóticas."
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             COLECCIONES & SERVICIOS DE AUTOR (BENTO EDITORIAL)
+             ========================================================================== -->
+        <section class="section-block-flow">
+            <div class="section-header-editorial">
+                <h3 class="section-title-serif">Colecciones & <em>Servicios</em></h3>
+                <span class="section-badge-micro">Atelier Floral</span>
+            </div>
+
+            <div class="bento-atelier-grid">
+
+                <!-- 1. SOBRE FLORAL (EXCLUSIVO) -->
+                <a href="https://wa.link/fflwpg" target="_blank" rel="noopener noreferrer" class="bento-card card-featured-rose" onclick="triggerTactile()">
+                    <div class="bento-top-row">
+                        <span class="bento-script-mini">exclusivo</span>
+                        <span class="bento-arrow">↗</span>
+                    </div>
+                    <div>
+                        <h4 class="bento-title">Sobre Floral</h4>
+                        <p class="bento-sub-text">Una opción elegante y delicada lista para regalar. Detalles que expresan lo que a veces no se dice.</p>
+                    </div>
+                </a>
+
+                <!-- 2. FLORES ETERNAS PRESERVADAS -->
+                <a href="https://wa.link/fflwpg" target="_blank" rel="noopener noreferrer" class="bento-card" onclick="triggerTactile()">
+                    <div class="bento-top-row">
+                        <span class="bento-script-mini">permanece</span>
+                        <span class="bento-arrow">↗</span>
+                    </div>
+                    <div>
+                        <h4 class="bento-title">Flores Eternas</h4>
+                        <p class="bento-sub-text">Rosas preservadas que conservan su belleza y textura durante años sin perder significado.</p>
+                    </div>
+                </a>
+
+                <!-- 3. NOVIAS & BODAS (FULL WIDTH) -->
+                <a href="https://wa.link/fflwpg" target="_blank" rel="noopener noreferrer" class="bento-card full-width" onclick="triggerTactile()">
+                    <div style="flex: 1;">
+                        <span class="bento-script-mini">para un día único</span>
+                        <h4 class="bento-title">Ramos de Novia & Boutonniere</h4>
+                        <p class="bento-sub-text">Rosas premium, ranúnculos y orquídeas Phalaenopsis para acompañar la historia más especial.</p>
+                    </div>
+                    <span class="bento-arrow">↗</span>
+                </a>
+
+                <!-- 4. OTRA FORMA DE REGALAR: PLANTAS -->
+                <a href="https://wa.link/fflwpg" target="_blank" rel="noopener noreferrer" class="bento-card" onclick="triggerTactile()">
+                    <div class="bento-top-row">
+                        <span class="bento-script-mini">vida y bienestar</span>
+                        <span class="bento-arrow">↗</span>
+                    </div>
+                    <div>
+                        <h4 class="bento-title">Plantas Vivas</h4>
+                        <p class="bento-sub-text">Regalos que duran, crecen y transforman el hogar con calidez y energía verde.</p>
+                    </div>
+                </a>
+
+                <!-- 5. BOX FLORAL & DETALLES -->
+                <a href="https://wa.link/fflwpg" target="_blank" rel="noopener noreferrer" class="bento-card" onclick="triggerTactile()">
+                    <div class="bento-top-row">
+                        <span class="bento-script-mini">sin fecha especial</span>
+                        <span class="bento-arrow">↗</span>
+                    </div>
+                    <div>
+                        <h4 class="bento-title">Box & Bombones</h4>
+                        <p class="bento-sub-text">Flores frescas y chocolates para sorprender con un gesto inesperado: pensé en vos.</p>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             PAISAJISMO COMERCIAL: ANTES / DESPUÉS INTERACTIVO
+             ========================================================================== -->
+        <article class="landscape-interactive-card">
+            <div class="landscape-header">
+                <span class="landscape-tag">🌿 Proyecto Comercial · Puerto Iguazú</span>
+                <h3 class="landscape-quote">"El paisajismo no es simplemente colocar plantas. Es pensar, planificar y diseñar con un propósito."</h3>
+            </div>
+
+            <!-- VISOR DINÁMICO ANTES / DESPUÉS -->
+            <div class="landscape-view-box" id="landscapeViewer">
+                <img class="landscape-img-state img-after" src="https://cdn.jsdelivr.net/gh/linkuniversal/amapola@main/paisajismo%20DESPUES.jpg" alt="Paisajismo Después - Amapola Iguazú" loading="lazy">
+                <img class="landscape-img-state img-before" src="https://cdn.jsdelivr.net/gh/linkuniversal/amapola@main/paisajismo%20ANTES.jpg" alt="Paisajismo Antes - Amapola Iguazú" loading="lazy">
+            </div>
+
+            <!-- SELECTOR TÁCTIL ANTES / DESPUÉS -->
+            <div class="toggle-before-after-bar">
+                <button class="toggle-btn-pill active" id="btnAfter" onclick="setLandscapeView('after')">🌱 Después (Transformado)</button>
+                <button class="toggle-btn-pill" id="btnBefore" onclick="setLandscapeView('before')">Antes del Proyecto</button>
+            </div>
+
+            <p class="landscape-footer-copy">
+                En Amapola interpretamos la identidad de cada negocio, eligiendo las especies exactas según la luz solar, el mantenimiento y la atmósfera deseada.
+            </p>
+        </article>
+
+        <!-- ==========================================================================
+             GUÍA DE CUIDADOS CON ICONOS BOTÁNICOS VECTORIALES
+             ========================================================================== -->
+        <section class="care-guide-card">
+            <div class="care-header-row">
+                <h3 class="care-title">Cuidados de tu Ramo</h3>
+                <span class="bento-script-mini">con amor, Amapola</span>
+            </div>
+
+            <div class="care-step-item">
+                <div class="care-icon-badge">
+                    <svg viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+                </div>
+                <div class="care-step-text">
+                    <strong>Agua fresca a diario:</strong> Cambiá el agua de ser posible todos los días para evitar bacterias y nutrir los tallos.
+                </div>
+            </div>
+
+            <div class="care-step-item">
+                <div class="care-icon-badge">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/>
+                        <line x1="20" y1="4" x2="8.12" y2="15.88"/>
+                        <line x1="14.47" y1="14.48" x2="20" y2="20"/>
+                        <line x1="8.12" y1="8.12" x2="12" y2="12"/>
+                    </svg>
+                </div>
+                <div class="care-step-text">
+                    <strong>Corte diagonal a 45°:</strong> Cortá de 2 a 3 cm los tallos en diagonal para maximizar la absorción de nutrientes.
+                </div>
+            </div>
+
+            <div class="care-step-item">
+                <div class="care-icon-badge">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="5"/>
+                        <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                        <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                </div>
+                <div class="care-step-text">
+                    <strong>Sin luz solar directa:</strong> Mantené el ramo resguardado del sol directo y de corrientes fuertes de aire.
+                </div>
+            </div>
+
+            <div class="care-step-item">
+                <div class="care-icon-badge">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2a5 5 0 0 0-5 5v14a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V7a5 5 0 0 0-5-5z"/>
+                        <line x1="7" y1="11" x2="17" y2="11"/>
+                    </svg>
+                </div>
+                <div class="care-step-text">
+                    <strong>Lugar fresco:</strong> Colocalo en el rincón más fresco de la casa para extender su fragancia y textura.
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             COLOFÓN Y UBICACIÓN FÍSICA
+             ========================================================================== -->
+        <footer class="amapola-footer">
+            <div class="footer-badge-seal">Siempre flores · Siempre Amapola</div>
+
+            <a href="https://maps.google.com/?q=Av.+Rep%C3%BAblica+Argentina+135,+Puerto+Iguaz%C3%BA" target="_blank" rel="noopener noreferrer" class="footer-address-link">
+                📍 Av. República Argentina 135<br>
+                Puerto Iguazú, Misiones, Argentina
+            </a>
+
+            <!-- REDES SOCIALES DIRECTAS -->
+            <div class="footer-social-row">
+                <a href="https://www.instagram.com/amapola.serviciosflorales/" target="_blank" rel="noopener noreferrer" class="social-pill-btn" aria-label="Instagram de Amapola">
+                    <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+                <a href="https://wa.link/fflwpg" target="_blank" rel="noopener noreferrer" class="social-pill-btn" aria-label="WhatsApp directo">
+                    <svg viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+                </a>
+            </div>
+
+            <p class="footer-rights">© AMAPOLA · DISEÑO FLORAL & VERDES</p>
+        </footer>
+
+    </main>
+
+    <!-- ==========================================================================
+         SCRIPTS: HÁPTICA, TOGGLE DE ANTES/DESPUÉS Y GESTIÓN DE AUDIO
+         ========================================================================== -->
+    <script>
+        // 1. VIBRACIÓN HÁPTICA
+        function triggerTactile() {
+            if ('vibrate' in navigator) {
+                try { navigator.vibrate(8); } catch(e) {}
+            }
+        }
+
+        // 2. TOGGLE DE SONIDO EN VIDEOS
+        function toggleMute(btn, videoId) {
+            triggerTactile();
+            const vid = document.getElementById(videoId);
+            if (!vid) return;
+
+            if (vid.muted) {
+                vid.muted = false;
+                btn.innerText = '🔊 Audio';
+                btn.style.background = 'var(--ama-rose-deep)';
+            } else {
+                vid.muted = true;
+                btn.innerText = '🔇 Sonido';
+                btn.style.background = 'rgba(18, 16, 16, 0.7)';
+            }
+        }
+
+        // 3. COMPARADOR INTERACTIVO ANTES / DESPUÉS
+        function setLandscapeView(mode) {
+            triggerTactile();
+            const viewer = document.getElementById('landscapeViewer');
+            const btnAfter = document.getElementById('btnAfter');
+            const btnBefore = document.getElementById('btnBefore');
+
+            if (mode === 'before') {
+                viewer.classList.add('show-before');
+                btnBefore.classList.add('active');
+                btnAfter.classList.remove('active');
+            } else {
+                viewer.classList.remove('show-before');
+                btnAfter.classList.add('active');
+                btnBefore.classList.remove('active');
+            }
+        }
+
+        // 4. AUTOPLAY / PAUSE INTELIGENTE EN SCROLL
+        if ('IntersectionObserver' in window) {
+            const videoObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    const video = entry.target;
+                    if (entry.isIntersecting) {
+                        video.play().catch(() => {});
+                    } else {
+                        video.pause();
+                    }
+                });
+            }, { threshold: 0.25 });
+
+            document.querySelectorAll('video').forEach(v => videoObserver.observe(v));
+        }
+    </script>
+</body>
+</html>
