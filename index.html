@@ -60,7 +60,6 @@
         body {
             font-family: var(--font-sans);
             color: var(--ama-charcoal);
-            background: linear-gradient(180deg, #FCEBE5 0%, #F2E1DA 45%, #EFE1D8 100%);
             min-height: 100vh;
             min-height: 100dvh;
             display: flex;
@@ -69,52 +68,32 @@
             padding: 0 14px 54px;
             overflow-x: hidden;
             position: relative;
+            background-color: var(--ama-nude-light);
         }
 
         /* ==========================================================================
-           2. FONDO BOTÁNICO EN BRISA CONTINUA (IMPECABLE Y SUTIL)
+           2. FONDO BOTÁNICO INFINITO EN MOVIMIENTO CONTINUO (TÉCNICA MEAL PLANS)
            ========================================================================== */
-        .botanical-dense-backdrop {
+        .botanical-infinite-stage {
             position: fixed;
-            top: 0; left: 0;
-            width: 100vw; height: 100vh;
-            pointer-events: none;
+            inset: 0;
             z-index: 0;
-            overflow: hidden;
-        }
-
-        .bg-cluster {
-            position: absolute;
-            will-change: transform;
             pointer-events: none;
-            opacity: 0.17;
-            filter: drop-shadow(0 2px 5px rgba(185, 110, 110, 0.1));
+            background:
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg transform='translate(28,28)'%3E%3Cpath d='M0 -12 C6 -12 10 -6 0 0 C-10 -6 -6 -12 0 -12 Z' fill='%23B96E6E' fill-opacity='0.16'/%3E%3Cpath d='M12 0 C12 6 6 10 0 0 C6 -10 12 -6 12 0 Z' fill='%23B96E6E' fill-opacity='0.16'/%3E%3Cpath d='M0 12 C-6 12 -10 6 0 0 C10 6 6 12 0 12 Z' fill='%23A85353' fill-opacity='0.16'/%3E%3Cpath d='M-12 0 C-12 -6 -6 -10 0 0 C-6 10 -12 6 -12 0 Z' fill='%23A85353' fill-opacity='0.16'/%3E%3Ccircle cx='0' cy='0' r='4' fill='%23FCEBE5' fill-opacity='0.4'/%3E%3Ccircle cx='0' cy='0' r='2' fill='%23B96E6E' fill-opacity='0.3'/%3E%3C/g%3E%3Cg transform='translate(72,72)' fill='%23F3B9AF' fill-opacity='0.18'%3E%3Cellipse cx='0' cy='-10' rx='2.5' ry='6'/%3E%3Cellipse cx='0' cy='10' rx='2.5' ry='6'/%3E%3Cellipse cx='-10' cy='0' rx='6' ry='2.5'/%3E%3Cellipse cx='10' cy='0' rx='6' ry='2.5'/%3E%3Cellipse cx='-7' cy='-7' rx='2.5' ry='6' transform='rotate(-45 -7 -7)'/%3E%3Cellipse cx='7' cy='7' rx='2.5' ry='6' transform='rotate(-45 7 7)'/%3E%3Cellipse cx='7' cy='-7' rx='2.5' ry='6' transform='rotate(45 7 -7)'/%3E%3Cellipse cx='-7' cy='7' rx='2.5' ry='6' transform='rotate(45 -7 7)'/%3E%3Ccircle cx='0' cy='0' r='4.5' fill='%23FFFFFF' fill-opacity='0.45'/%3E%3Ccircle cx='0' cy='0' r='2' fill='%23B96E6E' fill-opacity='0.35'/%3E%3C/g%3E%3Cg transform='translate(72,24)'%3E%3Cpath d='M-12 12 Q0 0 12 -12' fill='none' stroke='%233D5344' stroke-width='1.3' stroke-opacity='0.22' stroke-linecap='round'/%3E%3Cpath d='M-6 6 C-3 2 4 4 2 8 C0 10 -4 9 -6 6 Z' fill='%233D5344' fill-opacity='0.16'/%3E%3Cpath d='M2 -2 C-1 -6 3 -9 6 -6 C9 -3 7 1 2 -2 Z' fill='%233D5344' fill-opacity='0.16'/%3E%3Ccircle cx='12' cy='-12' r='2.5' fill='%23B96E6E' fill-opacity='0.25'/%3E%3C/g%3E%3Cg transform='translate(24,72)'%3E%3Cpath d='M-6 8 Q0 0 6 -8' fill='none' stroke='%233D5344' stroke-width='1.2' stroke-opacity='0.2' stroke-linecap='round'/%3E%3Ccircle cx='6' cy='-8' r='4.5' fill='%23F3B9AF' fill-opacity='0.22'/%3E%3Ccircle cx='6' cy='-8' r='2' fill='%23B96E6E' fill-opacity='0.28'/%3E%3Cpath d='M-1 3 C2 0 5 2 3 5 Z' fill='%233D5344' fill-opacity='0.16'/%3E%3C/g%3E%3Ccircle cx='0' cy='0' r='3' fill='%23B96E6E' fill-opacity='0.18'/%3E%3Ccircle cx='96' cy='0' r='3' fill='%23B96E6E' fill-opacity='0.18'/%3E%3Ccircle cx='0' cy='96' r='3' fill='%23B96E6E' fill-opacity='0.18'/%3E%3Ccircle cx='96' cy='96' r='3' fill='%23B96E6E' fill-opacity='0.18'/%3E%3Ccircle cx='48' cy='48' r='2' fill='%23B96E6E' fill-opacity='0.15'/%3E%3Ccircle cx='10' cy='48' r='1.5' fill='%233D5344' fill-opacity='0.14'/%3E%3Ccircle cx='86' cy='48' r='1.5' fill='%233D5344' fill-opacity='0.14'/%3E%3Ccircle cx='48' cy='10' r='1.5' fill='%23F3B9AF' fill-opacity='0.18'/%3E%3Ccircle cx='48' cy='86' r='1.5' fill='%23F3B9AF' fill-opacity='0.18'/%3E%3C/svg%3E"),
+                linear-gradient(180deg, #FCEBE5 0%, #F2E1DA 45%, #EFE1D8 100%);
+            background-size: 96px 96px, 100% 100%;
+            background-repeat: repeat, no-repeat;
+            animation: smoothBotanicalDrift 45s linear infinite;
         }
 
-        .bg-c1 { top: 4%; left: -10px; width: 68px; height: 68px; animation: floatCadenceA 24s infinite alternate ease-in-out; }
-        .bg-c2 { top: 12%; right: -8px; width: 62px; height: 62px; animation: floatCadenceB 28s infinite alternate ease-in-out -4s; }
-        .bg-c3 { top: 26%; left: -6px; width: 56px; height: 56px; animation: floatCadenceC 22s infinite alternate ease-in-out -8s; }
-        .bg-c4 { top: 38%; right: -12px; width: 72px; height: 72px; animation: floatCadenceA 26s infinite alternate ease-in-out -12s; }
-        .bg-c5 { top: 54%; left: -14px; width: 78px; height: 78px; animation: floatCadenceB 30s infinite alternate ease-in-out -6s; }
-        .bg-c6 { top: 68%; right: -8px; width: 64px; height: 64px; animation: floatCadenceC 24s infinite alternate ease-in-out -15s; }
-        .bg-c7 { bottom: 8%; left: -6px; width: 60px; height: 60px; animation: floatCadenceA 25s infinite alternate ease-in-out -3s; }
-        .bg-c8 { bottom: 2%; right: -10px; width: 70px; height: 70px; animation: floatCadenceB 27s infinite alternate ease-in-out -9s; }
-        .bg-c-mid { top: 48%; left: 50%; width: 140px; height: 140px; margin-left: -70px; opacity: 0.07; filter: blur(1.5px); animation: floatCadenceC 36s infinite alternate ease-in-out; }
-
-        @keyframes floatCadenceA {
-            0%   { transform: translate(0, 0) rotate(0deg) scale(1); }
-            50%  { transform: translate(10px, -14px) rotate(8deg) scale(1.05); }
-            100% { transform: translate(-8px, 12px) rotate(-6deg) scale(0.96); }
-        }
-        @keyframes floatCadenceB {
-            0%   { transform: translate(0, 0) rotate(0deg) scale(1); }
-            50%  { transform: translate(-12px, 15px) rotate(-8deg) scale(1.06); }
-            100% { transform: translate(10px, -10px) rotate(6deg) scale(0.95); }
-        }
-        @keyframes floatCadenceC {
-            0%   { transform: translate(0, 0) rotate(0deg) scale(1); }
-            50%  { transform: translate(8px, 12px) rotate(6deg) scale(0.97); }
-            100% { transform: translate(-10px, -12px) rotate(-7deg) scale(1.04); }
+        @keyframes smoothBotanicalDrift {
+            0% {
+                background-position: 0px 0px, 0 0;
+            }
+            100% {
+                background-position: 960px 960px, 0 0;
+            }
         }
 
         /* ==========================================================================
@@ -200,7 +179,7 @@
 
         /* BIO MINIMALISTA CON ICONOS VECTORIALES PROFESIONALES */
         .brand-bio-box {
-            background: rgba(255, 255, 255, 0.84);
+            background: rgba(255, 255, 255, 0.86);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             border: 1px solid rgba(243, 185, 175, 0.6);
@@ -239,15 +218,15 @@
         }
 
         /* ==========================================================================
-           5. HERO CTA: BOTÓN WHATSAPP CON CORONA ENVOLVENTE Y HAZ DE LUZ
+           5. HERO CTA: BOTÓN WHATSAPP LIMPIO, RADIANTE Y DESPEJADO
            ========================================================================== */
-        .cta-wreath-perimeter-wrap {
+        .cta-clean-hero-wrap {
             position: relative;
-            padding: 10px 4px;
             width: 100%;
+            padding: 2px 0;
         }
 
-        .btn-whatsapp-wreath {
+        .btn-whatsapp-clean {
             position: relative;
             background: linear-gradient(135deg, #B96E6E 0%, #A44C4C 100%);
             border: 2.5px solid #FFFFFF;
@@ -262,11 +241,10 @@
             transition: all 0.28s var(--smooth);
             overflow: hidden;
             cursor: pointer;
-            z-index: 5;
         }
 
-        /* HAZ DE LUZ RADIANTE EN BARRIDO CONTINUO */
-        .btn-whatsapp-wreath::before {
+        /* HAZ DE LUZ RADIANTE EN BARRIDO CONTINUO (SHEEN FLUIDO) */
+        .btn-whatsapp-clean::before {
             content: '';
             position: absolute;
             top: 0; left: -140%;
@@ -275,7 +253,7 @@
             transform: skewX(-25deg);
             animation: jewelBeamSweep 4.8s infinite ease-in-out;
             pointer-events: none;
-            z-index: 3;
+            z-index: 2;
         }
 
         @keyframes jewelBeamSweep {
@@ -283,12 +261,12 @@
             85%, 100% { left: 180%; }
         }
 
-        .btn-whatsapp-wreath:hover {
+        .btn-whatsapp-clean:hover {
             transform: translateY(-3px) scale(1.02);
             box-shadow: 0 24px 48px -6px rgba(168, 83, 83, 0.48);
         }
 
-        .btn-whatsapp-wreath:active {
+        .btn-whatsapp-clean:active {
             transform: scale(0.97);
         }
 
@@ -298,7 +276,7 @@
             gap: 2px;
             text-align: left;
             position: relative;
-            z-index: 4;
+            z-index: 3;
         }
 
         .wpp-tag-pulse {
@@ -354,10 +332,10 @@
             box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
             transition: transform 0.35s var(--spring);
             position: relative;
-            z-index: 4;
+            z-index: 3;
         }
 
-        .btn-whatsapp-wreath:hover .wpp-icon-badge {
+        .btn-whatsapp-clean:hover .wpp-icon-badge {
             transform: scale(1.15) rotate(14deg);
             color: #25D366;
         }
@@ -366,29 +344,6 @@
             width: 25px;
             height: 25px;
             fill: currentColor;
-        }
-
-        /* CORONA FLORAL EXTERIOR (NO TAPA EL TEXTO) */
-        .garland-node {
-            position: absolute;
-            pointer-events: none;
-            z-index: 7;
-            will-change: transform;
-            filter: drop-shadow(0 4px 8px rgba(168, 83, 83, 0.35));
-            animation: garlandBreeze 5s infinite ease-in-out alternate;
-        }
-
-        .gn-top-l   { top: -6px; left: 14px; width: 34px; height: 34px; animation-delay: 0s; }
-        .gn-top-r   { top: -8px; right: 62px; width: 34px; height: 34px; animation-delay: -2s; }
-        .gn-side-l  { top: 50%; left: -8px; margin-top: -16px; width: 30px; height: 30px; animation-delay: -1.2s; }
-        .gn-side-r  { top: 50%; right: -8px; margin-top: -16px; width: 30px; height: 30px; animation-delay: -3.5s; }
-        .gn-bot-l   { bottom: -6px; left: 32px; width: 32px; height: 32px; animation-delay: -2.8s; }
-        .gn-bot-r   { bottom: -7px; right: 18px; width: 34px; height: 34px; animation-delay: -0.8s; }
-
-        @keyframes garlandBreeze {
-            0%   { transform: rotate(0deg) scale(1); }
-            50%  { transform: rotate(8deg) scale(1.08); }
-            100% { transform: rotate(-6deg) scale(0.96); }
         }
 
         /* ==========================================================================
@@ -890,80 +845,9 @@
 <body>
 
     <!-- ==========================================================================
-         DEFINICIONES VECTORIALES GEOMÉTRICAMENTE PERFECTAS (SÍMBOLOS 100x100)
+         FONDO BOTÁNICO INFINITO EN MOVIMIENTO CONTINUO (COBERTURA 100% EN X/Y)
          ========================================================================== -->
-    <svg style="display: none;">
-        <defs>
-            <!-- 1. SÍMBOLO: AMAPOLA BOTÁNICA SILVESTRE (PETALOS SUAVES EN CAPAS) -->
-            <symbol id="flowerAmapolaSoft" viewBox="0 0 100 100">
-                <g transform="translate(50,50)">
-                    <path d="M0,0 C-22,-40 22,-40 0,0" fill="#B96E6E" opacity="0.95"/>
-                    <path d="M0,0 C40,-22 40,22 0,0" fill="#B96E6E" opacity="0.92"/>
-                    <path d="M0,0 C22,40 -22,40 0,0" fill="#A85353" opacity="0.95"/>
-                    <path d="M0,0 C-40,22 -40,-22 0,0" fill="#A85353" opacity="0.92"/>
-                    <ellipse cx="-12" cy="-12" rx="14" ry="10" fill="#F3B9AF" opacity="0.85" transform="rotate(-25 -12 -12)"/>
-                    <ellipse cx="14" cy="-10" rx="12" ry="9" fill="#F3B9AF" opacity="0.85" transform="rotate(30 14 -10)"/>
-                    <ellipse cx="10" cy="14" rx="13" ry="10" fill="#FCEBE5" opacity="0.8" transform="rotate(15 10 14)"/>
-                    <ellipse cx="-12" cy="12" rx="12" ry="9" fill="#FCEBE5" opacity="0.8" transform="rotate(-35 -12 12)"/>
-                    <circle cx="0" cy="0" r="10" fill="#FFFFFF" stroke="#B96E6E" stroke-width="1.8"/>
-                    <circle cx="0" cy="0" r="5" fill="#3D5344"/>
-                    <circle cx="0" cy="0" r="2" fill="#FFFFFF"/>
-                </g>
-            </symbol>
-
-            <!-- 2. SÍMBOLO: MARGARITA RADIAL DE PÉTALOS ESBELTOS -->
-            <symbol id="flowerDaisyRadial" viewBox="0 0 100 100">
-                <g transform="translate(50,50)" fill="#B96E6E" opacity="0.95">
-                    <ellipse cx="0" cy="-30" rx="4.5" ry="14"/>
-                    <ellipse cx="0" cy="30" rx="4.5" ry="14"/>
-                    <ellipse cx="-30" cy="0" rx="14" ry="4.5"/>
-                    <ellipse cx="30" cy="0" rx="14" ry="4.5"/>
-                    <ellipse cx="-21" cy="-21" rx="5" ry="14" transform="rotate(-45 -21 -21)"/>
-                    <ellipse cx="21" cy="21" rx="5" ry="14" transform="rotate(-45 21 21)"/>
-                    <ellipse cx="21" cy="-21" rx="5" ry="14" transform="rotate(45 21 -21)"/>
-                    <ellipse cx="-21" cy="21" rx="5" ry="14" transform="rotate(45 -21 21)"/>
-                    <circle cx="0" cy="0" r="12" fill="#FFFFFF" stroke="#B96E6E" stroke-width="1.8"/>
-                    <circle cx="0" cy="0" r="5.5" fill="#F3B9AF"/>
-                </g>
-            </symbol>
-
-            <!-- 3. SÍMBOLO: RAMA CON HOJAS Y CAPULLOS BOTÁNICOS -->
-            <symbol id="foliageBranchSprig" viewBox="0 0 100 100">
-                <path d="M15,85 Q45,55 85,15" fill="none" stroke="#3D5344" stroke-width="2.5" stroke-linecap="round"/>
-                <path d="M38,62 C46,50 62,54 62,64 C52,70 42,66 38,62 Z" fill="#3D5344"/>
-                <path d="M54,46 C44,38 42,22 52,24 C60,32 58,42 54,46 Z" fill="#3D5344"/>
-                <path d="M68,32 C78,22 92,26 90,36 C80,40 72,36 68,32 Z" fill="#3D5344"/>
-                <circle cx="85" cy="15" r="7" fill="#B96E6E"/>
-                <circle cx="85" cy="15" r="3" fill="#FFFFFF"/>
-                <circle cx="38" cy="62" r="5" fill="#F3B9AF"/>
-            </symbol>
-
-            <!-- 4. SÍMBOLO: CAPULLO DE ROSA PRESERVADA NUDE -->
-            <symbol id="rosePreservedBud" viewBox="0 0 100 100">
-                <g transform="translate(50,50)">
-                    <circle cx="0" cy="0" r="32" fill="#FCEBE5" stroke="#F3B9AF" stroke-width="2"/>
-                    <circle cx="0" cy="0" r="22" fill="#F3B9AF" opacity="0.9"/>
-                    <circle cx="0" cy="0" r="13" fill="#B96E6E"/>
-                    <circle cx="0" cy="0" r="6" fill="#FFFFFF"/>
-                </g>
-            </symbol>
-        </defs>
-    </svg>
-
-    <!-- ==========================================================================
-         FONDO BOTÁNICO EN BRISA CONTINUA (ENTEROS Y MATEMÁTICAMENTE ESCALADOS)
-         ========================================================================== -->
-    <div class="botanical-dense-backdrop">
-        <svg class="bg-cluster bg-c1"><use href="#foliageBranchSprig"/></svg>
-        <svg class="bg-cluster bg-c2"><use href="#flowerAmapolaSoft"/></svg>
-        <svg class="bg-cluster bg-c3"><use href="#flowerDaisyRadial"/></svg>
-        <svg class="bg-cluster bg-c4"><use href="#rosePreservedBud"/></svg>
-        <svg class="bg-cluster bg-c5"><use href="#flowerAmapolaSoft"/></svg>
-        <svg class="bg-cluster bg-c6"><use href="#foliageBranchSprig"/></svg>
-        <svg class="bg-cluster bg-c7"><use href="#rosePreservedBud"/></svg>
-        <svg class="bg-cluster bg-c8"><use href="#flowerDaisyRadial"/></svg>
-        <svg class="bg-cluster bg-c-mid"><use href="#flowerAmapolaSoft"/></svg>
-    </div>
+    <div class="botanical-infinite-stage" aria-hidden="true"></div>
 
     <!-- CONTENEDOR PRINCIPAL MOBILE HUB -->
     <main class="amapola-shell">
@@ -1037,18 +921,10 @@
         </section>
 
         <!-- ==========================================================================
-             HERO CTA: BOTÓN WHATSAPP CON CORONA ENVOLVENTE EXTERIOR
+             HERO CTA: BOTÓN WHATSAPP LIMPIO, RADIANTE Y DESPEJADO
              ========================================================================== -->
-        <div class="cta-wreath-perimeter-wrap">
-            <!-- Guirnalda exterior que enmarca las esquinas sin tocar el texto -->
-            <svg class="garland-node gn-top-l"><use href="#flowerAmapolaSoft"/></svg>
-            <svg class="garland-node gn-top-r"><use href="#flowerDaisyRadial"/></svg>
-            <svg class="garland-node gn-side-l"><use href="#foliageBranchSprig"/></svg>
-            <svg class="garland-node gn-side-r"><use href="#rosePreservedBud"/></svg>
-            <svg class="garland-node gn-bot-l"><use href="#rosePreservedBud"/></svg>
-            <svg class="garland-node gn-bot-r"><use href="#foliageBranchSprig"/></svg>
-
-            <a href="https://wa.link/fflwpg" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-wreath" onclick="triggerTactile()">
+        <div class="cta-clean-hero-wrap">
+            <a href="https://wa.link/fflwpg" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-clean" onclick="triggerTactile()">
                 <div class="wpp-text-group">
                     <span class="wpp-tag-pulse">Atelier Abierto</span>
                     <h2 class="wpp-main-heading">Consultas & Pedidos por WhatsApp</h2>
